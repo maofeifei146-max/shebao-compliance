@@ -178,9 +178,9 @@ td:first-child, th:first-child { text-align: left; }
       <table>
         <tr><th>险种</th><th>公司费率</th><th>基数下限</th><th>基数上限</th></tr>
         <tr><td>养老保险</td><td>16%</td><td>4,775</td><td style="color:var(--red);font-weight:700">27,549</td></tr>
-        <tr><td>医疗一档</td><td>6%</td><td>6,727</td><td>33,633</td></tr>
-        <tr><td>生育保险</td><td>0.5%</td><td>6,727</td><td>33,633</td></tr>
-        <tr><td>失业保险</td><td>0.8%</td><td>2,520</td><td>44,265</td></tr>
+        <tr><td>医疗一档</td><td>6%</td><td>6,727</td><td style="color:var(--red);font-weight:700">27,549</td></tr>
+        <tr><td>生育保险</td><td>0.5%</td><td>6,727</td><td style="color:var(--red);font-weight:700">27,549</td></tr>
+        <tr><td>失业保险</td><td>0.8%</td><td>2,520</td><td style="color:var(--red);font-weight:700">27,549</td></tr>
         <tr><td>工伤保险</td><td>0.4%*</td><td>—</td><td>—</td></tr>
         <tr style="background:#edf2f7;font-weight:600"><td>合计</td><td>23.7%</td><td>—</td><td>—</td></tr>
       </table>
@@ -188,7 +188,7 @@ td:first-child, th:first-child { text-align: left; }
     </div>
   </div>
   <div style="margin-top: 16px; padding: 12px; background: #fffaf0; border-radius: 8px; border-left: 4px solid var(--orange); font-size: 13px;">
-    <strong>关键数据：</strong>352人（13.8%）工资超过养老保险上限 27,549 元；177人（6.9%）超过医疗保险上限 33,633 元。超过上限部分不产生额外社保费用，这是筹划空间的核心来源。
+    <strong>关键数据：</strong>352人（13.8%）工资超过社保缴费上限 27,549 元（五个险种统一上限）。超过上限部分不产生额外社保费用，这是筹划空间的核心来源。
     <span class="explain">白话说：社保缴费基数有"天花板"。比如养老保险，工资再高也只按 27,549 元算。工资超过这个数的部分，公司不用多交社保。</span>
   </div>
 </div>
@@ -199,14 +199,14 @@ td:first-child, th:first-child { text-align: left; }
   <table>
     <tr><th>险种</th><th>工资</th><th>缴费基数（封顶后）</th><th>公司月缴</th></tr>
     <tr><td>养老保险</td><td>30,000</td><td style="color:var(--red)">27,549（已触顶）</td><td>4,407.84</td></tr>
-    <tr><td>医疗一档</td><td>30,000</td><td>30,000（未触顶）</td><td>1,800.00</td></tr>
-    <tr><td>生育保险</td><td>30,000</td><td>30,000（未触顶）</td><td>150.00</td></tr>
-    <tr><td>失业保险</td><td>30,000</td><td>30,000（未触顶）</td><td>240.00</td></tr>
+    <tr><td>医疗一档</td><td>30,000</td><td style="color:var(--red)">27,549（已触顶）</td><td>1,652.94</td></tr>
+    <tr><td>生育保险</td><td>30,000</td><td style="color:var(--red)">27,549（已触顶）</td><td>137.75</td></tr>
+    <tr><td>失业保险</td><td>30,000</td><td style="color:var(--red)">27,549（已触顶）</td><td>220.39</td></tr>
     <tr><td>工伤保险</td><td>30,000</td><td>30,000</td><td>120.00</td></tr>
-    <tr style="background:#edf2f7;font-weight:700"><td>合计</td><td>—</td><td>—</td><td style="color:var(--red);font-size:15px">6,717.84</td></tr>
+    <tr style="background:#edf2f7;font-weight:700"><td>合计</td><td>—</td><td>—</td><td style="color:var(--red);font-size:15px">6,538.92</td></tr>
   </table>
   <div style="margin-top:12px; font-size:13px; color:var(--text-sec)">
-    公司每月社保支出 6,717.84 元，占工资的 22.4%。年度公司社保总成本 1.22 亿元（2,565 人）。
+    公司每月社保支出 6,538.92 元，占工资的 21.8%。年度公司社保总成本 1.22 亿元（2,565 人）。
   </div>
 </div>
 
@@ -234,7 +234,7 @@ td:first-child, th:first-child { text-align: left; }
       <div>
         <h3>成本测算</h3>
         <div class="cost-highlight">
-          <div class="cost-row"><span class="label">合规基线（公司月缴）</span><span class="val">6,717.84 元</span></div>
+          <div class="cost-row"><span class="label">合规基线（公司月缴）</span><span class="val">6,538.92 元</span></div>
           <div class="cost-row"><span class="label">调整后（账面工资仅 8,000）</span></div>
           <div class="cost-row"><span class="label" style="padding-left:12px">养老 8,000 x 16%</span><span class="val">1,280.00</span></div>
           <div class="cost-row"><span class="label" style="padding-left:12px">医疗 8,000 x 6%</span><span class="val">480.00</span></div>
@@ -242,7 +242,7 @@ td:first-child, th:first-child { text-align: left; }
           <div class="cost-row"><span class="label" style="padding-left:12px">失业 8,000 x 0.8%</span><span class="val">64.00</span></div>
           <div class="cost-row"><span class="label" style="padding-left:12px">工伤 8,000 x 0.4%</span><span class="val">32.00</span></div>
           <div class="cost-row" style="border-top:1px solid #bee3f8;padding-top:6px"><span class="label">调整后合计</span><span class="val">1,896.00 元</span></div>
-          <div class="cost-row saving"><span class="label">每人每月节省</span><span class="val">4,821.84 元（71.8%）</span></div>
+          <div class="cost-row saving"><span class="label">每人每月节省</span><span class="val">4,821.84 元（73.7%）</span></div>
         </div>
         <div style="font-size:12px;color:var(--text-sec)">
           若全员按此模式（平均节省 2,000 元/人/月），年节省约 <strong>6,156 万元</strong>
@@ -270,7 +270,7 @@ td:first-child, th:first-child { text-align: left; }
     </div>
     <div class="verdict verdict-danger">
       <strong>综合判定：不建议大规模使用</strong>
-      节省效果确实好（省了 71.8% 的社保成本），但现在税务系统全面升级了，每张发票的来龙去脉都能查到。让员工自己找发票这事本身就不可控，万一有人搞到假发票，整个公司都会被牵连。以前这么干问题不大，现在属于高风险操作。
+      节省效果确实好（省了 73.7% 的社保成本），但现在税务系统全面升级了，每张发票的来龙去脉都能查到。让员工自己找发票这事本身就不可控，万一有人搞到假发票，整个公司都会被牵连。以前这么干问题不大，现在属于高风险操作。
     </div>
   </div>
 </div>
@@ -298,11 +298,11 @@ td:first-child, th:first-child { text-align: left; }
       <div>
         <h3>成本测算</h3>
         <div class="cost-highlight">
-          <div class="cost-row"><span class="label">合规基线（公司月缴）</span><span class="val">6,717.84 元</span></div>
+          <div class="cost-row"><span class="label">合规基线（公司月缴）</span><span class="val">6,538.92 元</span></div>
           <div class="cost-row"><span class="label">A 公司发 8,000（在这里交社保）</span><span class="val">1,896.00 元</span></div>
           <div class="cost-row"><span class="label">B 公司发 22,000（不交社保）</span><span class="val">0 元</span></div>
           <div class="cost-row" style="border-top:1px solid #bee3f8;padding-top:6px"><span class="label">两个公司合计</span><span class="val">1,896.00 元</span></div>
-          <div class="cost-row saving"><span class="label">每人每月节省</span><span class="val">4,821.84 元（71.8%）</span></div>
+          <div class="cost-row saving"><span class="label">每人每月节省</span><span class="val">4,821.84 元（73.7%）</span></div>
         </div>
         <div style="font-size:12px;color:var(--text-sec)">
           <strong>怎么省的钱：</strong>国家规定一个人在多个公司上班，社保只需要一家公司交。所以让员工同时在 A、B 两个公司任职，只在发 8,000 工资的 A 公司交社保，B 公司那份工资就不用交了。
@@ -331,7 +331,7 @@ td:first-child, th:first-child { text-align: left; }
     </div>
     <div class="verdict verdict-danger">
       <strong>综合判定：不建议大规模使用</strong>
-      节省效果确实好（71.8%），但操作起来太复杂、风险太大。最要命的是：如果大部分员工都这么操作，A 和 B 两个公司用着同一批人，在法律上会被认定为"一家公司"。一旦 A 公司出了问题（比如欠钱、被起诉），B 公司也要跟着赔。只能用在极少数人身上，不具备全员推广的可行性。
+      节省效果确实好（73.7%），但操作起来太复杂、风险太大。最要命的是：如果大部分员工都这么操作，A 和 B 两个公司用着同一批人，在法律上会被认定为"一家公司"。一旦 A 公司出了问题（比如欠钱、被起诉），B 公司也要跟着赔。只能用在极少数人身上，不具备全员推广的可行性。
     </div>
   </div>
 </div>
@@ -359,9 +359,9 @@ td:first-child, th:first-child { text-align: left; }
       <div>
         <h3>成本测算</h3>
         <div class="cost-highlight">
-          <div class="cost-row"><span class="label">合规基线（公司月缴）</span><span class="val">6,717.84 元</span></div>
+          <div class="cost-row"><span class="label">合规基线（公司月缴）</span><span class="val">6,538.92 元</span></div>
           <div class="cost-row"><span class="label">账上只体现 8,000 工资</span><span class="val">1,896.00 元</span></div>
-          <div class="cost-row saving"><span class="label">每人每月节省</span><span class="val">4,821.84 元（71.8%）</span></div>
+          <div class="cost-row saving"><span class="label">每人每月节省</span><span class="val">4,821.84 元（73.7%）</span></div>
         </div>
         <div style="font-size:12px;color:var(--text-sec)">
           账外发放的 22,000 元不走公司账，不体现在工资表上。社保只按账面上的 8,000 元算。教培行业曾经大量使用这种方式。
@@ -418,11 +418,11 @@ td:first-child, th:first-child { text-align: left; }
       <div>
         <h3>成本测算</h3>
         <div class="cost-highlight">
-          <div class="cost-row"><span class="label">合规基线（公司月缴）</span><span class="val">6,717.84 元</span></div>
+          <div class="cost-row"><span class="label">合规基线（公司月缴）</span><span class="val">6,538.92 元</span></div>
           <div class="cost-row"><span class="label">员工 8,000（需要交社保）</span><span class="val">1,896.00 元</span></div>
           <div class="cost-row"><span class="label">父亲 10,000（已退休，不用交社保）</span><span class="val">0 元</span></div>
           <div class="cost-row"><span class="label">母亲 12,000（已退休，不用交社保）</span><span class="val">0 元</span></div>
-          <div class="cost-row saving"><span class="label">每人每月节省</span><span class="val">4,821.84 元（71.8%）</span></div>
+          <div class="cost-row saving"><span class="label">每人每月节省</span><span class="val">4,821.84 元（73.7%）</span></div>
         </div>
         <div style="font-size:12px;color:var(--text-sec)">
           <strong>怎么省的钱：</strong>退休老人不需要交社保。把本来给一个员工的钱拆给父母领，公司只为员工那 8,000 元交社保，父母那份一分钱社保都不用出。
@@ -450,7 +450,7 @@ td:first-child, th:first-child { text-align: left; }
     </div>
     <div class="verdict verdict-danger">
       <strong>综合判定：不建议使用</strong>
-      省钱效果和前几个一样好（71.8%），但风险太大。父母根本没在公司上过班，没有打卡记录、没有工作痕迹，一查就是"吃空饷"。即使父母确实有工作能力，也说不清楚为什么一个月拿一两万，合理性根本站不住脚。
+      省钱效果和前几个一样好（73.7%），但风险太大。父母根本没在公司上过班，没有打卡记录、没有工作痕迹，一查就是"吃空饷"。即使父母确实有工作能力，也说不清楚为什么一个月拿一两万，合理性根本站不住脚。
     </div>
   </div>
 </div>
@@ -461,7 +461,7 @@ td:first-child, th:first-child { text-align: left; }
     <div style="display:flex;align-items:center;gap:16px">
       <div style="background:rgba(255,255,255,.7);border-radius:8px;padding:8px 14px;text-align:center;min-width:90px">
         <div style="font-size:11px;color:var(--text-sec);line-height:1.2">年节省</div>
-        <div style="font-size:20px;font-weight:700;color:var(--green);line-height:1.2">2,224<span style="font-size:13px;font-weight:400">万</span></div>
+        <div style="font-size:20px;font-weight:700;color:var(--green);line-height:1.2">1,564<span style="font-size:13px;font-weight:400">万</span></div>
       </div>
       <div>
         <div class="num">方案五</div>
@@ -478,7 +478,7 @@ td:first-child, th:first-child { text-align: left; }
       <div>
         <h3>成本测算</h3>
         <div class="cost-highlight">
-          <div class="cost-row"><span class="label">合规基线（公司月缴）</span><span class="val">6,717.84 元</span></div>
+          <div class="cost-row"><span class="label">合规基线（公司月缴）</span><span class="val">6,538.92 元</span></div>
           <div class="cost-row" style="background:#fffaf0;padding:4px 0"><span class="label"><strong>14% 福利上限约束</strong></span></div>
           <div class="cost-row"><span class="label" style="padding-left:12px">最多能发多少福利 = 30,000 x 14%</span><span class="val" style="color:var(--orange)">4,200.00 元</span></div>
           <div class="cost-row"><span class="label" style="padding-left:12px">社保基数 = 30,000 - 4,200</span><span class="val">25,800.00 元</span></div>
@@ -489,7 +489,7 @@ td:first-child, th:first-child { text-align: left; }
           <div class="cost-row"><span class="label" style="padding-left:12px">失业 25,800 x 0.8%</span><span class="val">206.40</span></div>
           <div class="cost-row"><span class="label" style="padding-left:12px">工伤 25,800 x 0.4%</span><span class="val">103.20</span></div>
           <div class="cost-row" style="border-top:1px solid #bee3f8;padding-top:6px"><span class="label">调整后合计</span><span class="val">6,114.60 元</span></div>
-          <div class="cost-row saving"><span class="label">每人每月节省</span><span class="val">603.24 元（9.0%）</span></div>
+          <div class="cost-row saving"><span class="label">每人每月节省</span><span class="val">424.32 元（6.5%）</span></div>
         </div>
         <div class="legal-ref">
           <strong>为什么能这么做：</strong>国家有明确规定（劳社险中心函〔2006〕60号文），公司发给员工的福利（比如交通卡、超市卡、加油卡这些实物）不用算进社保缴费基数。也就是说，福利不算"工资"，社保不按这个数收钱。<br><br>
@@ -518,7 +518,7 @@ td:first-child, th:first-child { text-align: left; }
     </div>
     <div class="verdict verdict-ok">
       <strong>综合判定：七种方案中风险最低，推荐优先使用</strong>
-      有国家文件明确支持，是唯一合法合规的方案。但受 14% 上限的限制，按月薪 3 万算，最多只能省 603 元/月（9%），全员年节省 2,224 万。省的钱不多，但胜在安全、合规、经得起查。建议把部分工资转化为实物福利（交通卡、加油卡、超市卡），严格控制在工资总额 14% 以内。
+      有国家文件明确支持，是唯一合法合规的方案。但受 14% 上限的限制，按月薪 3 万算，最多只能省 424 元/月（6.5%），全员年节省 1,564 万。省的钱不多，但胜在安全、合规、经得起查。建议把部分工资转化为实物福利（交通卡、加油卡、超市卡），严格控制在工资总额 14% 以内。
     </div>
   </div>
 </div>
@@ -529,7 +529,7 @@ td:first-child, th:first-child { text-align: left; }
     <div style="display:flex;align-items:center;gap:16px">
       <div style="background:rgba(255,255,255,.7);border-radius:8px;padding:8px 14px;text-align:center;min-width:90px">
         <div style="font-size:11px;color:var(--text-sec);line-height:1.2">年节省</div>
-        <div style="font-size:20px;font-weight:700;color:var(--green);line-height:1.2">1,539<span style="font-size:13px;font-weight:400">万</span></div>
+        <div style="font-size:20px;font-weight:700;color:var(--green);line-height:1.2">1,081<span style="font-size:13px;font-weight:400">万</span></div>
       </div>
       <div>
         <div class="num">方案六</div>
@@ -546,7 +546,7 @@ td:first-child, th:first-child { text-align: left; }
       <div>
         <h3>成本测算</h3>
         <div class="cost-highlight">
-          <div class="cost-row"><span class="label">合规基线（深圳，30,000 工资）</span><span class="val">6,717.84 元</span></div>
+          <div class="cost-row"><span class="label">合规基线（深圳，30,000 工资）</span><span class="val">6,538.92 元</span></div>
           <div class="cost-row"><span class="label">如果全部按深圳最低基数交</span></div>
           <div class="cost-row"><span class="label" style="padding-left:12px">养老 4,775 x 16%</span><span class="val">764.00</span></div>
           <div class="cost-row"><span class="label" style="padding-left:12px">医疗 6,727 x 6%</span><span class="val">403.62</span></div>
@@ -554,7 +554,7 @@ td:first-child, th:first-child { text-align: left; }
           <div class="cost-row"><span class="label" style="padding-left:12px">失业 2,520 x 0.8%</span><span class="val">20.16</span></div>
           <div class="cost-row"><span class="label" style="padding-left:12px">工伤 2,360 x 0.4%</span><span class="val">9.44</span></div>
           <div class="cost-row" style="border-top:1px solid #bee3f8;padding-top:6px"><span class="label">最低基数合计</span><span class="val">1,230.86 元</span></div>
-          <div class="cost-row saving"><span class="label">每人每月最大节省</span><span class="val">5,486.99 元（81.7%）</span></div>
+          <div class="cost-row saving"><span class="label">每人每月最大节省</span><span class="val">5,308.06 元（81.2%）</span></div>
         </div>
         <div style="font-size:12px;color:var(--text-sec)">
           <strong>关键限制：</strong>这只是理论最大值。实际上只有工资本来就很低的员工（接近最低基数）才能真正省到这么多。对于月薪 3 万的员工，必须存在"社保特别便宜的城市"且能把员工的社保关系迁过去才行。
@@ -619,7 +619,7 @@ td:first-child, th:first-child { text-align: left; }
         </div>
         <h3>成本测算</h3>
         <div class="cost-highlight">
-          <div class="cost-row"><span class="label">合规基线（全额缴纳，公司月缴）</span><span class="val">6,717.84 元</span></div>
+          <div class="cost-row"><span class="label">合规基线（全额缴纳，公司月缴）</span><span class="val">6,538.92 元</span></div>
           <div class="cost-row"><span class="label">仅基数打折（78%），不拆分</span><span class="val">5,242.32 元</span></div>
           <div class="cost-row" style="border-top:1px dashed #bee3f8;margin-top:4px;padding-top:6px"><span class="label">最优方案：78% 打折 + 30% 半年度拆分</span></div>
           <div class="cost-row"><span class="label" style="padding-left:12px">普通月份（10个月，基数很低）</span><span class="val">3,565 元</span></div>
@@ -643,7 +643,7 @@ td:first-child, th:first-child { text-align: left; }
         <div class="pros-cons">
           <div class="pro-box">
             <div class="tag">优势</div>
-            <ul><li>不需要发票、不需要注册新公司</li><li>不涉及假工资、假用工</li><li>节省金额可观（4,095万），比职工福利多将近一倍</li><li>员工实际收入没变，只是发放时间变了</li><li>被查到最多补基数差额，不涉及刑事</li></ul>
+            <ul><li>不需要发票、不需要注册新公司</li><li>不涉及假工资、假用工</li><li>节省金额可观（4,095万），比职工福利多将近两倍</li><li>员工实际收入没变，只是发放时间变了</li><li>被查到最多补基数差额，不涉及刑事</li></ul>
           </div>
           <div class="con-box">
             <div class="tag">劣势</div>
@@ -654,7 +654,7 @@ td:first-child, th:first-child { text-align: left; }
     </div>
     <div class="verdict verdict-warn">
       <strong>综合判定：性价比较高的折中方案，值得关注</strong>
-      这是六种传统方案之外的第七条路。核心思路是"把钱挪到特定月份发"，压低日常月份的社保基数。节省 4,095 万/年（34.8%），比职工福利（2,224万）多出将近一倍，但风险远低于费用报销和体外循环。最大的风险是"奖金也算工资"这一点——如果社保局严格按上年度总收入除以 12 来算基数，拆分出来的那部分还是要被算进去。但实操中很多企业都在用类似的薪资结构优化，被查的概率和后果都比前四个方案轻得多。
+      这是六种传统方案之外的第七条路。核心思路是"把钱挪到特定月份发"，压低日常月份的社保基数。节省 4,095 万/年（34.8%），比职工福利（1,564万）多出两倍多，但风险远低于费用报销和体外循环。最大的风险是"奖金也算工资"这一点——如果社保局严格按上年度总收入除以 12 来算基数，拆分出来的那部分还是要被算进去。但实操中很多企业都在用类似的薪资结构优化，被查的概率和后果都比前四个方案轻得多。
     </div>
   </div>
 </div>
@@ -679,7 +679,7 @@ td:first-child, th:first-child { text-align: left; }
       <td style="font-weight:600">费用报销</td>
       <td style="text-align:left;font-size:12px">工资变发票报销</td>
       <td style="color:var(--green);font-weight:700">4,822</td>
-      <td>71.8%</td>
+      <td>73.7%</td>
       <td style="font-weight:700">6,156 万</td>
       <td><span class="risk risk-high">高</span></td>
       <td style="font-weight:700;color:var(--orange)">D</td>
@@ -689,7 +689,7 @@ td:first-child, th:first-child { text-align: left; }
       <td style="font-weight:600">人员拆分</td>
       <td style="text-align:left;font-size:12px">两个公司，只一个交社保</td>
       <td style="color:var(--green);font-weight:700">4,822</td>
-      <td>71.8%</td>
+      <td>73.7%</td>
       <td style="font-weight:700">6,156 万</td>
       <td><span class="risk risk-vhigh">极高</span></td>
       <td style="font-weight:700;color:var(--orange)">D</td>
@@ -699,7 +699,7 @@ td:first-child, th:first-child { text-align: left; }
       <td style="font-weight:600">体外循环</td>
       <td style="text-align:left;font-size:12px">账外偷偷发钱</td>
       <td style="color:var(--green);font-weight:700">4,822</td>
-      <td>71.8%</td>
+      <td>73.7%</td>
       <td style="font-weight:700">6,156 万</td>
       <td><span class="risk risk-xhigh">极高</span></td>
       <td style="font-weight:700;color:var(--red)">F</td>
@@ -709,7 +709,7 @@ td:first-child, th:first-child { text-align: left; }
       <td style="font-weight:600">亲属拆分</td>
       <td style="text-align:left;font-size:12px">让退休父母来领钱</td>
       <td style="color:var(--green);font-weight:700">4,822</td>
-      <td>71.8%</td>
+      <td>73.7%</td>
       <td style="font-weight:700">6,156 万</td>
       <td><span class="risk risk-vhigh">极高</span></td>
       <td style="font-weight:700;color:var(--red)">F</td>
@@ -728,9 +728,9 @@ td:first-child, th:first-child { text-align: left; }
       <td style="font-weight:700">6</td>
       <td style="font-weight:600">职工福利</td>
       <td style="text-align:left;font-size:12px">工资变实物卡（有法规支持）</td>
-      <td style="color:var(--green);font-weight:700">603</td>
-      <td>9.0%</td>
-      <td style="font-weight:700">2,224 万</td>
+      <td style="color:var(--green);font-weight:700">424</td>
+      <td>6.5%</td>
+      <td style="font-weight:700">1,564 万</td>
       <td><span class="risk risk-low">低-中</span></td>
       <td style="font-weight:700;color:var(--green)">B</td>
     </tr>
@@ -738,9 +738,9 @@ td:first-child, th:first-child { text-align: left; }
       <td style="font-weight:700">7</td>
       <td style="font-weight:600">社保洼地</td>
       <td style="text-align:left;font-size:12px">搬到社保便宜的城市</td>
-      <td style="color:var(--green);font-weight:700">5,487</td>
-      <td>81.7%</td>
-      <td style="font-weight:700">1,539 万</td>
+      <td style="color:var(--green);font-weight:700">5,308</td>
+      <td>81.2%</td>
+      <td style="font-weight:700">1,081 万</td>
       <td><span class="risk risk-low">低</span></td>
       <td style="font-weight:700;color:var(--accent)">B</td>
     </tr>
@@ -852,8 +852,8 @@ td:first-child, th:first-child { text-align: left; }
     <tr style="background:#f0fff4">
       <td style="font-weight:700">6</td>
       <td style="font-weight:600">职工福利</td>
-      <td>723*</td>
-      <td style="color:var(--green);font-weight:700">2,224 万</td>
+      <td>508*</td>
+      <td style="color:var(--green);font-weight:700">1,564 万</td>
       <td><span class="risk risk-low">低</span></td>
       <td><span class="risk risk-low">低</span></td>
       <td>补缴社保 + 小额罚款</td>
@@ -861,15 +861,15 @@ td:first-child, th:first-child { text-align: left; }
     <tr>
       <td style="font-weight:700">7</td>
       <td style="font-weight:600">社保洼地</td>
-      <td>500*</td>
-      <td style="color:var(--green);font-weight:700">1,539 万</td>
+      <td>352*</td>
+      <td style="color:var(--green);font-weight:700">1,081 万</td>
       <td><span class="risk risk-high">高</span></td>
       <td><span class="risk risk-low">低</span></td>
       <td>补缴差额 + 少量罚款</td>
     </tr>
   </table>
   <div style="font-size:12px;color:var(--text-sec);margin-top:8px">
-    * 方案五（薪资拆分+打折）基于 78% 基数折扣 + 30% 半年度拆分，人均月省 1,330 元；方案六受 14% 福利上限约束，按平均薪资 17,651 元计算，人均月省 723 元（10.3%）；方案七仅适用于低薪员工，全员平均节省有限。
+    * 方案五（薪资拆分+打折）基于 78% 基数折扣 + 30% 半年度拆分，人均月省 1,330 元；方案六受 14% 福利上限约束，按平均薪资 17,651 元计算，人均月省 508 元（6.5%）；方案七仅适用于低薪员工，全员平均节省有限。
   </div>
 </div>
 
@@ -879,11 +879,11 @@ td:first-child, th:first-child { text-align: left; }
   <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
     <div class="verdict verdict-ok" style="margin:0;border-left-color:#805ad5;background:#faf5ff">
       <strong>首推：方案七（薪资拆分+基数打折）</strong>
-      七种方案中性价比最高的折中选择。年省 4,095 万（34.8%），比职工福利多将近一倍，但风险远低于费用报销和体外循环。不需要发票、不需要注册新公司，被查到最多补基数差额，不涉及刑事。员工实际收入不变，只是发放时间调整。实操中大量企业在用类似的薪资结构优化，可行性强。
+      七种方案中性价比最高的折中选择。年省 4,095 万（34.8%），比职工福利多将近两倍，但风险远低于费用报销和体外循环。不需要发票、不需要注册新公司，被查到最多补基数差额，不涉及刑事。员工实际收入不变，只是发放时间调整。实操中大量企业在用类似的薪资结构优化，可行性强。
     </div>
     <div class="verdict verdict-ok" style="margin:0">
       <strong>稳健备选：方案五（职工福利）</strong>
-      七种方案中唯一有国家文件明确支持的方式。受 14% 上限约束，年省 2,224 万。省的钱不多，但胜在安全、合规、经得起查。建议与方案七组合使用：日常用薪资拆分压低基数，同时把部分工资转为实物福利进一步降低基数。
+      七种方案中唯一有国家文件明确支持的方式。受 14% 上限约束，年省 1,564 万。省的钱不多，但胜在安全、合规、经得起查。建议与方案七组合使用：日常用薪资拆分压低基数，同时把部分工资转为实物福利进一步降低基数。
     </div>
   </div>
   <div class="verdict verdict-warn" style="margin-top:16px">
@@ -892,7 +892,7 @@ td:first-child, th:first-child { text-align: left; }
   </div>
   <div class="verdict verdict-danger" style="margin-top:16px">
     <strong>警告：方案一至四均不建议大规模使用</strong>
-    费用报销（方案一）在税务系统升级后风险急剧升高；人员拆分（方案二）两个公司用同一批人会被认定为"一家公司"；体外循环（方案三）风险最高，银行流水一查就有；亲属拆分（方案四）让没上过班的父母领工资，一查就是"吃空饷"。这四个方案虽然都能省 71.8%，但省得越多、风险越大。正如原文所说：没有不能做的筹划，只有不能承担的风险。
+    费用报销（方案一）在税务系统升级后风险急剧升高；人员拆分（方案二）两个公司用同一批人会被认定为"一家公司"；体外循环（方案三）风险最高，银行流水一查就有；亲属拆分（方案四）让没上过班的父母领工资，一查就是"吃空饷"。这四个方案虽然都能省 73.7%，但省得越多、风险越大。正如原文所说：没有不能做的筹划，只有不能承担的风险。
   </div>
 </div>
 
