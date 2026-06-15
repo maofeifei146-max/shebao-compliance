@@ -61,6 +61,7 @@ td:first-child, th:first-child { text-align: left; }
 /* Risk badge */
 .risk { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 12px; font-weight: 600; white-space: nowrap; }
 .risk-low { background: var(--green-bg); color: var(--green); }
+.risk-vlow { background: #e6fffa; color: #234e52; }
 .risk-med { background: var(--yellow-bg); color: var(--yellow); }
 .risk-high { background: var(--orange-bg); color: var(--orange); }
 .risk-vhigh { background: var(--red-bg); color: var(--red); }
@@ -127,7 +128,7 @@ td:first-child, th:first-child { text-align: left; }
 <!-- HEADER -->
 <div class="header">
   <h1>深圳企业社保合规方案分析</h1>
-  <p>基于七种社保筹划路径的成本与风险量化评估（按节省金额从高到低排列）</p>
+  <p>基于十四种社保筹划路径的成本与风险量化评估（前七种不改变用工 · 后七种可能改变用工）</p>
   <div class="meta">
     <span>数据来源：333.xlsx（2,565名深圳员工）</span>
     <span>社保参数：2025-2026年深圳标准</span>
@@ -210,6 +211,12 @@ td:first-child, th:first-child { text-align: left; }
   </div>
 </div>
 
+
+<!-- ===== 第一部分：不改变用工状态 ===== -->
+<div style="background:linear-gradient(135deg,#ebf8ff 0%,#bee3f8 100%);border-radius:10px;padding:20px 28px;margin-bottom:20px;border-left:5px solid var(--accent)">
+  <h2 style="font-size:18px;color:var(--primary);margin:0 0 6px;padding:0;border:none">第一部分：不改变用工状态</h2>
+  <p style="font-size:13px;color:var(--text-sec);margin:0">以下方案在现有劳动合同和用工关系不变的前提下操作，通过调整薪资结构、申报基数、发放方式等手段降低社保成本。<strong style="color:var(--accent)">优势：不影响员工体验，不需要重新签合同，不会改变组织架构。</strong></p>
+</div>
 
 <!-- ===== 方案一：费用报销 ===== -->
 <div class="method">
@@ -659,9 +666,424 @@ td:first-child, th:first-child { text-align: left; }
   </div>
 </div>
 
+<!-- ===== 第二部分：可能改变用工状态 ===== -->
+<div style="background:linear-gradient(135deg,#feebc8 0%,#fbd38d 100%);border-radius:10px;padding:20px 28px;margin-bottom:20px;border-left:5px solid var(--orange)">
+  <h2 style="font-size:18px;color:var(--primary);margin:0 0 6px;padding:0;border:none">第二部分：可能改变用工状态</h2>
+  <p style="font-size:13px;color:var(--text-sec);margin:0">以下方案需要通过改变用工形式、招聘特定人群或调整组织架构来实现。<strong style="color:var(--orange)">劣势：可能需要重新签合同、改变岗位性质、招聘特定人群，实施复杂度更高，员工体验可能受影响。</strong>但部分方案节省效果显著。</p>
+</div>
+
+<!-- ===== 方案八：法定不计入社保基数项目优化 ===== -->
+<div class="method">
+  <div class="method-head" style="background:linear-gradient(135deg,#c6f6d5 0%,#9ae6b4 100%);border-bottom:2px solid #68d391">
+    <div style="display:flex;align-items:center;gap:16px">
+      <div style="background:rgba(255,255,255,.7);border-radius:8px;padding:8px 14px;text-align:center;min-width:90px">
+        <div style="font-size:11px;color:var(--text-sec);line-height:1.2">年节省</div>
+        <div style="font-size:20px;font-weight:700;color:var(--green);line-height:1.2">1,094<span style="font-size:13px;font-weight:400">万</span></div>
+      </div>
+      <div>
+        <div class="num">方案八（需改变用工）</div>
+        <h2>法定不计入社保基数项目优化</h2>
+        <div class="desc">把部分工资归入"法定不算社保基数"的项目（差旅津贴、通讯补贴、交通补贴等），直接压低社保计算基数</div>
+      </div>
+    </div>
+    <div style="text-align:right"><span class="risk risk-low">风险：低</span></div>
+  </div>
+  <div class="method-body">
+    <div class="cols">
+      <div>
+        <h3>怎么操作的</h3>
+        <div style="font-size:13px;padding:12px;background:#f0fff4;border-radius:8px;border:1px solid #c6f6d5;margin-bottom:14px">
+          国家有一份"白名单"（劳社险中心函〔2006〕60号），列出了 25 种不算进社保基数的项目。比如：<br><br>
+          <strong>差旅费津贴</strong>（凭票据实报实销）<br>
+          <strong>误餐补助</strong>（非普遍发放，有标准限额）<br>
+          <strong>通讯补贴、交通补贴</strong>（符合当地政府标准）<br>
+          <strong>劳动保护用品</strong>（工作服、防暑降温费等）<br>
+          <strong>解除劳动合同的经济补偿金</strong><br><br>
+          操作：把员工薪酬中本来就有的这些支出"归入"对应类别，从社保基数里剔除。
+        </div>
+        <h3>成本测算</h3>
+        <div class="cost-highlight">
+          <div class="cost-row"><span class="label">合规基线（公司月缴）</span><span class="val">6,538.92 元</span></div>
+          <div class="cost-row"><span class="label">可剔除项目（假设 3,000 元/月）</span></div>
+          <div class="cost-row"><span class="label" style="padding-left:12px">养老（30,000-3,000）× 16%</span><span class="val">4,320.00</span></div>
+          <div class="cost-row"><span class="label" style="padding-left:12px">医疗 27,000 × 6%</span><span class="val">1,620.00</span></div>
+          <div class="cost-row"><span class="label" style="padding-left:12px">生育 27,000 × 0.5%</span><span class="val">135.00</span></div>
+          <div class="cost-row"><span class="label" style="padding-left:12px">失业 27,000 × 0.8%</span><span class="val">216.00</span></div>
+          <div class="cost-row"><span class="label" style="padding-left:12px">工伤 30,000 × 0.4%</span><span class="val">120.00</span></div>
+          <div class="cost-row" style="border-top:1px solid #bee3f8;padding-top:6px"><span class="label">调整后合计</span><span class="val">6,411.00 元</span></div>
+          <div class="cost-row saving"><span class="label">每人每月节省</span><span class="val">127.92 元（2.0%）</span></div>
+        </div>
+        <div style="font-size:12px;color:var(--text-sec)">
+          30K 案例节省有限，但对全员平均（可剔除项目占比更大），年节省约 <strong>1,094 万元</strong>。可与方案七叠加使用。
+        </div>
+      </div>
+      <div>
+        <h3>风险分析</h3>
+        <table>
+          <tr><th>风险点</th><th>等级</th><th>通俗解释</th></tr>
+          <tr><td>补贴名实不符</td><td><span class="risk risk-low">低</span></td><td>只要补贴有真实业务背景、审批流程和凭证，且标准不超过当地政府限额，就没问题</td></tr>
+          <tr><td>超标部分</td><td><span class="risk risk-med">中</span></td><td>超过当地政府标准的部分会被重新认定为工资，需补交社保</td></tr>
+          <tr><td>审计追溯</td><td><span class="risk risk-low">低</span></td><td>最多补缴差额，不涉及刑事</td></tr>
+        </table>
+        <div class="pros-cons">
+          <div class="pro-box"><div class="tag">优势</div><ul><li>有国家文件（劳社险中心函〔2006〕60号）白纸黑字列出 25 项</li><li>操作门槛低，只需调整薪酬科目</li><li>可与方案七（薪资拆分）叠加使用</li></ul></div>
+          <div class="con-box"><div class="tag">劣势</div><ul><li>30K 高薪案例节省有限（仅 2%）</li><li>需要员工配合提供票据</li><li>各地标准不同，需要逐一核实</li></ul></div>
+        </div>
+      </div>
+    </div>
+    <div class="verdict verdict-ok">
+      <strong>综合判定：合规且可叠加，建议优先梳理</strong>
+      有法规明文支持的合法路径。单项节省不大，但胜在合规、可叠加。建议 HR 和财务部门对照"25 项不计入清单"逐一梳理现有薪酬结构，能归入的全部归入。
+    </div>
+  </div>
+</div>
+
+<!-- ===== 方案九：政府补贴申领 ===== -->
+<div class="method">
+  <div class="method-head" style="background:linear-gradient(135deg,#c6f6d5 0%,#9ae6b4 100%);border-bottom:2px solid #68d391">
+    <div style="display:flex;align-items:center;gap:16px">
+      <div style="background:rgba(255,255,255,.7);border-radius:8px;padding:8px 14px;text-align:center;min-width:90px">
+        <div style="font-size:11px;color:var(--text-sec);line-height:1.2">年节省</div>
+        <div style="font-size:20px;font-weight:700;color:var(--green);line-height:1.2">1,554<span style="font-size:13px;font-weight:400">万</span></div>
+      </div>
+      <div>
+        <div class="num">方案九（可能改变用工）</div>
+        <h2>政府补贴申领（稳岗返还 + 就业补贴）</h2>
+        <div class="desc">主动申请政府给的用工补贴——稳岗返还、吸纳毕业生补贴、一次性扩岗补助等，直接抵扣社保支出</div>
+      </div>
+    </div>
+    <div style="text-align:right"><span class="risk risk-low">风险：极低</span></div>
+  </div>
+  <div class="method-body">
+    <div class="cols">
+      <div>
+        <h3>怎么操作的</h3>
+        <div style="font-size:13px;padding:12px;background:#f0fff4;border-radius:8px;border:1px solid #c6f6d5;margin-bottom:14px">
+          <strong>失业保险稳岗返还：</strong>不裁员/少裁员（裁员率 &lt; 5.5%），返还上年实缴失业保险费的 30%-60%。<br><br>
+          <strong>吸纳毕业生社保补贴：</strong>招用应届/离校2年内未就业毕业生，按实际缴纳社保费给予补贴，最长 12 个月。<br><br>
+          <strong>吸纳就业困难人员补贴：</strong>招用登记失业人员、残疾人等，最长补贴 3 年。<br><br>
+          <strong>一次性扩岗补助：</strong>招用应届毕业生且签1年以上合同，每人 1,500 元。
+        </div>
+        <h3>成本测算</h3>
+        <div class="cost-highlight">
+          <div class="cost-row"><span class="label">稳岗返还（60% × 失业保险费）</span><span class="val">144 元/人/月</span></div>
+          <div class="cost-row"><span class="label">吸纳毕业生补贴（假设 100 人）</span><span class="val">3,945 元/人/月</span></div>
+          <div class="cost-row"><span class="label">一次性扩岗补助（假设 50 人 × 1,500）</span><span class="val">75,000 元</span></div>
+          <div class="cost-row saving"><span class="label">综合年节省</span><span class="val">约 1,554 万元（12.8%）</span></div>
+        </div>
+      </div>
+      <div>
+        <h3>风险分析</h3>
+        <table>
+          <tr><th>风险点</th><th>等级</th><th>通俗解释</th></tr>
+          <tr><td>合规性</td><td><span class="risk risk-low">极低</span></td><td>这是政府主动给的钱，申请流程完全合法合规，不领白不领</td></tr>
+          <tr><td>申请条件</td><td><span class="risk risk-low">低</span></td><td>需要满足不裁员/少裁员等条件，但大部分正常经营的企业都能达到</td></tr>
+        </table>
+        <div class="pros-cons">
+          <div class="pro-box"><div class="tag">优势</div><ul><li>纯政策红利，零风险</li><li>不需要改变用工方式或薪资结构</li><li>大部分企业都有资格申请</li><li>很多公司根本不知道有这些补贴</li></ul></div>
+          <div class="con-box"><div class="tag">劣势</div><ul><li>补贴金额有限，占总社保比例 5%-15%</li><li>需要专人跟进申请和材料准备</li><li>政策每年可能调整</li></ul></div>
+        </div>
+      </div>
+    </div>
+    <div class="verdict verdict-ok">
+      <strong>综合判定：最应立即实施的方案，不领白不领</strong>
+      这是十四种方案中唯一"政府主动给你钱"的路径。零风险、不改变用工、不需要员工配合。建议 HR 部门立即对照当地人社局网站，逐项申领。很多企业不是不能领，而是根本不知道有这些钱可以拿。
+    </div>
+  </div>
+</div>
+
+<!-- ===== 方案十：残保金减免 ===== -->
+<div class="method">
+  <div class="method-head" style="background:linear-gradient(135deg,#c6f6d5 0%,#9ae6b4 100%);border-bottom:2px solid #68d391">
+    <div style="display:flex;align-items:center;gap:16px">
+      <div style="background:rgba(255,255,255,.7);border-radius:8px;padding:8px 14px;text-align:center;min-width:90px">
+        <div style="font-size:11px;color:var(--text-sec);line-height:1.2">年节省</div>
+        <div style="font-size:20px;font-weight:700;color:var(--green);line-height:1.2">770<span style="font-size:13px;font-weight:400">万</span></div>
+      </div>
+      <div>
+        <div class="num">方案十（可能改变用工）</div>
+        <h2>残保金减免（安排残疾人就业）</h2>
+        <div class="desc">通过实际安排残疾人就业达到 1.5% 比例，减免残疾人就业保障金（这笔钱虽然不是社保，但跟用工规模挂钩）</div>
+      </div>
+    </div>
+    <div style="text-align:right"><span class="risk risk-low">风险：低</span></div>
+  </div>
+  <div class="method-body">
+    <div class="cols">
+      <div>
+        <h3>怎么操作的</h3>
+        <div style="font-size:13px;padding:12px;background:#f0fff4;border-radius:8px;border:1px solid #c6f6d5;margin-bottom:14px">
+          残保金 =（上年职工人数 × 1.5% - 实际安排残疾人数）× 上年职工年平均工资。<br><br>
+          <strong>2,565 人的企业：</strong>需要安排 2,565 × 1.5% ≈ 39 名残疾人就业。<br>
+          安排 1% 以上（约 26 人）即可减缴 50%；全额安排可免缴。<br><br>
+          <strong>30 人以下企业：</strong>直接免征，无需操作。
+        </div>
+        <h3>成本测算</h3>
+        <div class="cost-highlight">
+          <div class="cost-row"><span class="label">未安排残疾人应缴残保金</span><span class="val">约 770 万/年</span></div>
+          <div class="cost-row"><span class="label">安排 26 人后减缴 50%</span><span class="val">省 385 万</span></div>
+          <div class="cost-row"><span class="label">全额安排 39 人后免缴</span><span class="val">省 770 万</span></div>
+          <div class="cost-row saving"><span class="label">综合年节省</span><span class="val">385-770 万元</span></div>
+        </div>
+      </div>
+      <div>
+        <h3>风险分析</h3>
+        <table>
+          <tr><th>风险点</th><th>等级</th><th>通俗解释</th></tr>
+          <tr><td>合规性</td><td><span class="risk risk-low">低</span></td><td>安排残疾人就业是国家鼓励的行为，完全合法</td></tr>
+          <tr><td>虚假安排</td><td><span class="risk risk-med">中</span></td><td>如果只挂名不上班（"挂靠"），被查到要追缴残保金</td></tr>
+          <tr><td>岗位匹配</td><td><span class="risk risk-med">中</span></td><td>需要为残疾人提供合适岗位和无障碍环境，有一定管理成本</td></tr>
+        </table>
+        <div class="pros-cons">
+          <div class="pro-box"><div class="tag">优势</div><ul><li>合法合规的政策优惠</li><li>节省金额可观（770万/年）</li><li>同时提升企业社会责任形象</li></ul></div>
+          <div class="con-box"><div class="tag">劣势</div><ul><li>需要真实安排残疾人就业，不能只挂名</li><ul>需要改造无障碍环境、匹配合适岗位</li><li>严格来说不是"社保优化"，是另一笔独立费用</li></ul></div>
+        </div>
+      </div>
+    </div>
+    <div class="verdict verdict-warn">
+      <strong>综合判定：金额可观但需要改变招聘策略</strong>
+      残保金虽然不是社保，但跟用工规模直接挂钩。2,565 人的企业如果不安排残疾人，每年要交约 770 万。建议对接当地残联和残疾人就业服务机构，找到适合岗位的残疾人员工。
+    </div>
+  </div>
+</div>
+
+<!-- ===== 方案十一：企业年金 ===== -->
+<div class="method">
+  <div class="method-head" style="background:linear-gradient(135deg,#e9d8fd 0%,#d6bcfa 100%);border-bottom:2px solid #b794f4">
+    <div style="display:flex;align-items:center;gap:16px">
+      <div style="background:rgba(255,255,255,.7);border-radius:8px;padding:8px 14px;text-align:center;min-width:90px">
+        <div style="font-size:11px;color:var(--text-sec);line-height:1.2">年节省</div>
+        <div style="font-size:20px;font-weight:700;color:var(--green);line-height:1.2">1,006<span style="font-size:13px;font-weight:400">万</span></div>
+      </div>
+      <div>
+        <div class="num">方案十一（可能改变用工）</div>
+        <h2>企业年金/补充公积金替代</h2>
+        <div class="desc">建立企业年金计划，把部分工资转入年金账户，单位缴费在工资总额 8% 以内可税前扣除</div>
+      </div>
+    </div>
+    <div style="text-align:right"><span class="risk risk-low">风险：低</span></div>
+  </div>
+  <div class="method-body">
+    <div class="cols">
+      <div>
+        <h3>怎么操作的</h3>
+        <div style="font-size:13px;padding:12px;background:#faf5ff;border-radius:8px;border:1px solid #e9d8fd;margin-bottom:14px">
+          企业年金是一种"补充养老金"制度。企业和个人各出一笔钱存入年金账户，退休后领取。<br><br>
+          <strong>省钱的两个途径：</strong><br>
+          1. 部分地区允许企业年金缴费从社保基数中扣除（各地口径不一）<br>
+          2. 单位缴费在工资总额 8% 以内可企业所得税税前扣除<br><br>
+          <strong>操作：</strong>建立企业年金计划 → 将部分工资性收入转入年金 → 降低当期社保基数 + 降低企业所得税。
+        </div>
+        <h3>成本测算</h3>
+        <div class="cost-highlight">
+          <div class="cost-row"><span class="label">合规基线（公司月缴）</span><span class="val">6,538.92 元</span></div>
+          <div class="cost-row"><span class="label">年金缴费（假设工资的 5%）</span><span class="val">1,500 元</span></div>
+          <div class="cost-row"><span class="label">社保基数降低后月缴</span><span class="val">6,212 元</span></div>
+          <div class="cost-row saving"><span class="label">每人每月节省</span><span class="val">327 元（5.0%）</span></div>
+        </div>
+        <div style="font-size:12px;color:var(--text-sec)">
+          全员实施年节省约 <strong>1,006 万元</strong>。叠加企业所得税优化效果更佳。
+        </div>
+      </div>
+      <div>
+        <h3>风险分析</h3>
+        <table>
+          <tr><th>风险点</th><th>等级</th><th>通俗解释</th></tr>
+          <tr><td>合规性</td><td><span class="risk risk-low">低</span></td><td>企业年金是国家鼓励的制度安排（人社部令第36号）</td></tr>
+          <tr><td>地区口径</td><td><span class="risk risk-med">中</span></td><td>各地对年金是否从社保基数扣除口径不一，需确认当地政策</td></tr>
+          <tr><td>员工接受度</td><td><span class="risk risk-low">低</span></td><td>年金是"额外养老金"，对员工来说是福利而非损失</td></tr>
+        </table>
+        <div class="pros-cons">
+          <div class="pro-box"><div class="tag">优势</div><ul><li>国家鼓励的制度安排</li><li>同时优化社保和企业所得税</li><li>员工获得额外养老保障，提升留任意愿</li></ul></div>
+          <div class="con-box"><div class="tag">劣势</div><ul><li>需要建立年金计划，有一定管理成本</li><li>各地对社保基数扣除口径不一</li><li>资金锁定到退休才能领取</li></ul></div>
+        </div>
+      </div>
+    </div>
+    <div class="verdict verdict-ok">
+      <strong>综合判定：适合中大型企业的长期制度安排</strong>
+      企业年金是国家鼓励的"第二支柱"养老制度。对于高薪员工占比高、希望留住核心人才的企业，既能优化税负，又能提升员工福利。但需要一定管理成本，适合中大型企业。
+    </div>
+  </div>
+</div>
+
+<!-- ===== 方案十二：退休返聘 ===== -->
+<div class="method">
+  <div class="method-head" style="background:linear-gradient(135deg,#feebc8 0%,#fbd38d 100%);border-bottom:2px solid #f6ad55">
+    <div style="display:flex;align-items:center;gap:16px">
+      <div style="background:rgba(255,255,255,.7);border-radius:8px;padding:8px 14px;text-align:center;min-width:90px">
+        <div style="font-size:11px;color:var(--text-sec);line-height:1.2">年节省</div>
+        <div style="font-size:20px;font-weight:700;color:var(--green);line-height:1.2">101<span style="font-size:13px;font-weight:400">万</span></div>
+      </div>
+      <div>
+        <div class="num">方案十二（需改变用工）</div>
+        <h2>退休返聘（免缴五险）</h2>
+        <div class="desc">招聘已退休并领取养老金的人员，签劳务协议而非劳动合同，企业完全免除五险缴纳义务</div>
+      </div>
+    </div>
+    <div style="text-align:right"><span class="risk risk-low">风险：低</span></div>
+  </div>
+  <div class="method-body">
+    <div class="cols">
+      <div>
+        <h3>怎么操作的</h3>
+        <div style="font-size:13px;padding:12px;background:#fffaf0;border-radius:8px;border:1px solid #feebc8;margin-bottom:14px">
+          退休人员已经领养老金了，不需要再交社保。企业跟他们签的是"劳务协议"（不是劳动合同），按劳务费结算报酬。<br><br>
+          <strong>法律依据：</strong>《劳动合同法》第44条——劳动者开始享受养老保险待遇的，劳动合同终止。最高法司法解释也明确：退休返聘属于劳务关系。<br><br>
+          <strong>注意：</strong>需要购买商业意外险或雇主责任险，覆盖工作中的意外风险。
+        </div>
+        <h3>成本测算</h3>
+        <div class="cost-highlight">
+          <div class="cost-row"><span class="label">合规基线（全日制员工，公司月缴）</span><span class="val">6,538.92 元</span></div>
+          <div class="cost-row"><span class="label">退休返聘（无需缴纳五险）</span><span class="val">0 元</span></div>
+          <div class="cost-row"><span class="label">商业意外险（约 150 元/月）</span><span class="val">150 元</span></div>
+          <div class="cost-row saving"><span class="label">每人每月节省</span><span class="val">6,389 元（97.7%）</span></div>
+        </div>
+        <div style="font-size:12px;color:var(--text-sec)">
+          适用面窄（仅经验型岗位），假设覆盖 5 人，年节省约 <strong>101 万元</strong>。
+        </div>
+      </div>
+      <div>
+        <h3>风险分析</h3>
+        <table>
+          <tr><th>风险点</th><th>等级</th><th>通俗解释</th></tr>
+          <tr><td>确认退休身份</td><td><span class="risk risk-low">低</span></td><td>入职前核验退休证和养老金领取证明即可</td></tr>
+          <tr><td>工伤风险</td><td><span class="risk risk-med">中</span></td><td>不走工伤认定，企业需承担民事赔偿（用商业保险覆盖）</td></tr>
+          <tr><td>适用面窄</td><td><span class="risk risk-med">中</span></td><td>只适合技术顾问、培训导师等经验型岗位，无法大规模推广</td></tr>
+        </table>
+        <div class="pros-cons">
+          <div class="pro-box"><div class="tag">优势</div><ul><li>节省比例极高（97.7%）</li><li>法律依据明确，风险低</li><li>退休人员经验丰富</li></ul></div>
+          <div class="con-box"><div class="tag">劣势</div><ul><li>适用面极窄，只适合少数岗位</li><li>退休人员体力和精力有限</li><li>需要额外购买商业保险</li></ul></div>
+        </div>
+      </div>
+    </div>
+    <div class="verdict verdict-ok">
+      <strong>综合判定：节省比例极高但适用面窄</strong>
+      退休返聘是法律明确允许的免缴社保路径。单个人节省接近 100%，但全公司能用的人很少。适合技术顾问、管理咨询、培训导师等经验型岗位。
+    </div>
+  </div>
+</div>
+
+<!-- ===== 方案十三：在校实习生 ===== -->
+<div class="method">
+  <div class="method-head" style="background:linear-gradient(135deg,#feebc8 0%,#fbd38d 100%);border-bottom:2px solid #f6ad55">
+    <div style="display:flex;align-items:center;gap:16px">
+      <div style="background:rgba(255,255,255,.7);border-radius:8px;padding:8px 14px;text-align:center;min-width:90px">
+        <div style="font-size:11px;color:var(--text-sec);line-height:1.2">年节省</div>
+        <div style="font-size:20px;font-weight:700;color:var(--green);line-height:1.2">201<span style="font-size:13px;font-weight:400">万</span></div>
+      </div>
+      <div>
+        <div class="num">方案十三（需改变用工）</div>
+        <h2>在校实习生用工（免缴社保）</h2>
+        <div class="desc">招募未毕业的在校生签实习协议，不构成劳动关系，完全免除社保缴纳义务</div>
+      </div>
+    </div>
+    <div style="text-align:right"><span class="risk risk-med">风险：中</span></div>
+  </div>
+  <div class="method-body">
+    <div class="cols">
+      <div>
+        <h3>怎么操作的</h3>
+        <div style="font-size:13px;padding:12px;background:#fffaf0;border-radius:8px;border:1px solid #feebc8;margin-bottom:14px">
+          在校大学生不算"劳动者"，和企业之间不构成劳动关系。签的是"实习协议"（三方协议：学校-企业-学生），不需要交社保。<br><br>
+          <strong>法律依据：</strong>原劳动部《关于贯彻执行劳动法若干问题的意见》第12条：在校生利用业余时间勤工助学，不视为就业。<br><br>
+          <strong>关键：</strong>必须是全日制在校学生，毕业后需及时转正或终止。
+        </div>
+        <h3>成本测算</h3>
+        <div class="cost-highlight">
+          <div class="cost-row"><span class="label">合规基线（全日制员工，公司月缴）</span><span class="val">6,538.92 元</span></div>
+          <div class="cost-row"><span class="label">实习生（无需缴纳社保）</span><span class="val">0 元</span></div>
+          <div class="cost-row"><span class="label">实习责任险（约 100 元/月）</span><span class="val">100 元</span></div>
+          <div class="cost-row saving"><span class="label">每人每月节省</span><span class="val">6,439 元（98.5%）</span></div>
+        </div>
+        <div style="font-size:12px;color:var(--text-sec)">
+          假设覆盖 10 个岗位（约 2% 人员），年节省约 <strong>201 万元</strong>。
+        </div>
+      </div>
+      <div>
+        <h3>风险分析</h3>
+        <table>
+          <tr><th>风险点</th><th>等级</th><th>通俗解释</th></tr>
+          <tr><td>假实习</td><td><span class="risk risk-med">中</span></td><td>如果实习生毕业后续签、或非在校生的"假实习"，可能被认定为事实劳动关系</td></tr>
+          <tr><td>管理方式</td><td><span class="risk risk-med">中</span></td><td>对实习生实施与正式员工相同的管理（考勤、绩效），可能触发劳动关系认定</td></tr>
+          <tr><td>工伤风险</td><td><span class="risk risk-med">中</span></td><td>实习期间的伤害不走工伤认定，企业需承担民事赔偿</td></tr>
+        </table>
+        <div class="pros-cons">
+          <div class="pro-box"><div class="tag">优势</div><ul><li>节省比例极高（98.5%）</li><li>有明确法律依据支持</li><li>适合校企合作、人才储备</li></ul></div>
+          <div class="con-box"><div class="tag">劣势</div><ul><li>必须是真正的在校学生</li><li>毕业后必须及时转正或终止</li><li>实习生能力和稳定性有限</li><li>管理方式需区别于正式员工</li></ul></div>
+        </div>
+      </div>
+    </div>
+    <div class="verdict verdict-warn">
+      <strong>综合判定：适合有校企合作基础的企业</strong>
+      实习生用工是合法的免缴社保路径，节省接近 100%。但适用面有限，且需要与高校建立稳定合作关系。管理方式必须区别于正式员工，避免"假实习真用工"。
+    </div>
+  </div>
+</div>
+
+<!-- ===== 方案十四：非全日制用工 ===== -->
+<div class="method">
+  <div class="method-head" style="background:linear-gradient(135deg,#feebc8 0%,#fbd38d 100%);border-bottom:2px solid #f6ad55">
+    <div style="display:flex;align-items:center;gap:16px">
+      <div style="background:rgba(255,255,255,.7);border-radius:8px;padding:8px 14px;text-align:center;min-width:90px">
+        <div style="font-size:11px;color:var(--text-sec);line-height:1.2">年节省</div>
+        <div style="font-size:20px;font-weight:700;color:var(--green);line-height:1.2">934<span style="font-size:13px;font-weight:400">万</span></div>
+      </div>
+      <div>
+        <div class="num">方案十四（需改变用工）</div>
+        <h2>非全日制用工（仅缴工伤险）</h2>
+        <div class="desc">将辅助性岗位改为非全日制——每天不超4小时、每周不超24小时，企业仅需缴纳工伤保险</div>
+      </div>
+    </div>
+    <div style="text-align:right"><span class="risk risk-med">风险：中</span></div>
+  </div>
+  <div class="method-body">
+    <div class="cols">
+      <div>
+        <h3>怎么操作的</h3>
+        <div style="font-size:13px;padding:12px;background:#fffaf0;border-radius:8px;border:1px solid #feebc8;margin-bottom:14px">
+          非全日制用工是一种特殊用工形式：每天工作不超过 4 小时，每周不超过 24 小时，按小时计酬。<br><br>
+          <strong>省钱的原理：</strong>法律只要求企业为非全日制员工缴纳工伤保险（费率 0.2%-0.5%），养老、医疗、失业、生育四险不强制。<br><br>
+          <strong>操作要求：</strong><br>
+          - 签非全日制劳动合同（可口头约定）<br>
+          - 严格控制工时（不能超时）<br>
+          - 薪资结算周期不超过 15 天<br>
+          - 员工可同时与多家单位建立劳动关系
+        </div>
+        <h3>成本测算</h3>
+        <div class="cost-highlight">
+          <div class="cost-row"><span class="label">合规基线（全日制，公司月缴）</span><span class="val">6,538.92 元</span></div>
+          <div class="cost-row"><span class="label">非全日制（仅缴工伤险 30,000 × 0.4%）</span><span class="val">120.00 元</span></div>
+          <div class="cost-row"><span class="label">免除：养老+医疗+生育+失业</span><span class="val">省 6,418.92 元</span></div>
+          <div class="cost-row saving"><span class="label">每人每月节省</span><span class="val">6,419 元（98.2%）</span></div>
+        </div>
+        <div style="font-size:12px;color:var(--text-sec)">
+          假设覆盖 5% 岗位（约 128 人），年节省约 <strong>934 万元</strong>。
+        </div>
+      </div>
+      <div>
+        <h3>风险分析</h3>
+        <table>
+          <tr><th>风险点</th><th>等级</th><th>通俗解释</th></tr>
+          <tr><td>工时超标</td><td><span class="risk risk-high">高</span></td><td>实际工时超过 4 小时/天或 24 小时/周，会被认定为全日制用工，需补缴全部社保</td></tr>
+          <tr><td>实质管理</td><td><span class="risk risk-med">中</span></td><td>如果对非全日制员工实施与正式员工相同的考勤和管理，可能触发全日制认定</td></tr>
+          <tr><td>员工投诉</td><td><span class="risk risk-med">中</span></td><td>员工因缺乏社保保障而投诉，引发劳动仲裁</td></tr>
+        </table>
+        <div class="pros-cons">
+          <div class="pro-box"><div class="tag">优势</div><ul><li>节省比例极高（98.2%）</li><li>有明确法律依据（《劳动合同法》68-72条）</li><li>用工灵活，双方可随时终止且无需经济补偿</li></ul></div>
+          <div class="con-box"><div class="tag">劣势</div><ul><li>工时必须严格控制，超时即失效</li><li>只适合保洁、保安、收银等短时岗位</li><li>结算周期不超过 15 天</li><li>员工可能因缺乏保障而不愿意</li></ul></div>
+        </div>
+      </div>
+    </div>
+    <div class="verdict verdict-warn">
+      <strong>综合判定：节省极高但管理要求严格</strong>
+      非全日制用工是法律允许的合法路径，单岗位节省接近 100%。但工时必须严格控制在每天 4 小时以内，一旦超时就会被认定为全日制用工，面临全额补缴。适合保洁、保安、前台等真正只需要短时工作的岗位。
+    </div>
+  </div>
+</div>
+
 <!-- ===== COMPARISON MATRIX ===== -->
 <div class="section">
-  <h2>三、七大方案综合对比（按年节省金额排序）</h2>
+  <h2>三、十四大方案综合对比（按年节省金额排序）</h2>
 
   <table class="matrix">
     <tr>
@@ -744,6 +1166,77 @@ td:first-child, th:first-child { text-align: left; }
       <td><span class="risk risk-low">低</span></td>
       <td style="font-weight:700;color:var(--accent)">B</td>
     </tr>
+    <!-- 第二部分：可能改变用工状态 -->
+    <tr style="background:#fff8f0;border-top:2px solid var(--orange)">
+      <td style="font-weight:700">8</td>
+      <td style="font-weight:600">政府补贴</td>
+      <td style="text-align:left;font-size:12px">稳岗/吸纳就业/培训补贴</td>
+      <td style="color:var(--green);font-weight:700">504</td>
+      <td>12.8%</td>
+      <td style="font-weight:700">1,554 万</td>
+      <td><span class="risk risk-vlow">极低</span></td>
+      <td style="font-weight:700;color:var(--green)">A</td>
+    </tr>
+    <tr style="background:#fff8f0">
+      <td style="font-weight:700">9</td>
+      <td style="font-weight:600">残保金减免</td>
+      <td style="text-align:left;font-size:12px">按比例安排残疾人就业</td>
+      <td style="color:var(--green);font-weight:700">250</td>
+      <td>N/A</td>
+      <td style="font-weight:700">770 万</td>
+      <td><span class="risk risk-low">低</span></td>
+      <td style="font-weight:700;color:var(--green)">B+</td>
+    </tr>
+    <tr style="background:#fff8f0">
+      <td style="font-weight:700">10</td>
+      <td style="font-weight:600">企业年金</td>
+      <td style="text-align:left;font-size:12px">年金抵扣社保缴费基数</td>
+      <td style="color:var(--green);font-weight:700">327</td>
+      <td>5%</td>
+      <td style="font-weight:700">1,006 万</td>
+      <td><span class="risk risk-low">低</span></td>
+      <td style="font-weight:700;color:var(--green)">B+</td>
+    </tr>
+    <tr style="background:#fff8f0">
+      <td style="font-weight:700">11</td>
+      <td style="font-weight:600">法定不计入项目</td>
+      <td style="text-align:left;font-size:12px">加班费/出差补贴不计入基数</td>
+      <td style="color:var(--green);font-weight:700">356</td>
+      <td>10%</td>
+      <td style="font-weight:700">1,094 万</td>
+      <td><span class="risk risk-low">低</span></td>
+      <td style="font-weight:700;color:var(--green)">B+</td>
+    </tr>
+    <tr style="background:#fff8f0">
+      <td style="font-weight:700">12</td>
+      <td style="font-weight:600">非全日制用工</td>
+      <td style="text-align:left;font-size:12px">部分岗位改为非全日制（仅缴工伤）</td>
+      <td style="color:var(--green);font-weight:700">6,419</td>
+      <td>98.2%</td>
+      <td style="font-weight:700">934 万</td>
+      <td><span class="risk risk-med">中</span></td>
+      <td style="font-weight:700;color:var(--green)">B</td>
+    </tr>
+    <tr style="background:#fff8f0">
+      <td style="font-weight:700">13</td>
+      <td style="font-weight:600">实习生</td>
+      <td style="text-align:left;font-size:12px">部分岗位用实习生替代</td>
+      <td style="color:var(--green);font-weight:700">6,439</td>
+      <td>98.5%</td>
+      <td style="font-weight:700">201 万</td>
+      <td><span class="risk risk-med">中</span></td>
+      <td style="font-weight:700;color:var(--orange)">B-</td>
+    </tr>
+    <tr style="background:#fff8f0">
+      <td style="font-weight:700">14</td>
+      <td style="font-weight:600">退休返聘</td>
+      <td style="text-align:left;font-size:12px">退休员工不缴社保</td>
+      <td style="color:var(--green);font-weight:700">6,389</td>
+      <td>97.7%</td>
+      <td style="font-weight:700">101 万</td>
+      <td><span class="risk risk-low">低</span></td>
+      <td style="font-weight:700;color:var(--accent)">B</td>
+    </tr>
   </table>
 
   <!-- Visual comparison -->
@@ -784,6 +1277,36 @@ td:first-child, th:first-child { text-align: left; }
     <div style="position:absolute;left:16%;top:8%;transform:translate(-50%,-50%);text-align:center">
       <div style="width:42px;height:42px;border-radius:50%;background:var(--accent);opacity:.8;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:14px">7</div>
       <div style="font-size:11px;margin-top:3px">社保洼地</div>
+    </div>
+
+    <!-- 第二部分：可能改变用工 -->
+    <div style="position:absolute;left:10%;top:56%;transform:translate(-50%,-50%);text-align:center">
+      <div style="width:38px;height:38px;border-radius:50%;background:#38a169;opacity:.8;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:13px;border:2px dashed #276749">8</div>
+      <div style="font-size:10px;margin-top:2px">政府补贴</div>
+    </div>
+    <div style="position:absolute;left:28%;top:70%;transform:translate(-50%,-50%);text-align:center">
+      <div style="width:32px;height:32px;border-radius:50%;background:#4299e1;opacity:.8;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:12px;border:2px dashed #2b6cb0">9</div>
+      <div style="font-size:10px;margin-top:2px">残保金</div>
+    </div>
+    <div style="position:absolute;left:22%;top:60%;transform:translate(-50%,-50%);text-align:center">
+      <div style="width:34px;height:34px;border-radius:50%;background:#4299e1;opacity:.8;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:12px;border:2px dashed #2b6cb0">10</div>
+      <div style="font-size:10px;margin-top:2px">企业年金</div>
+    </div>
+    <div style="position:absolute;left:20%;top:50%;transform:translate(-50%,-50%);text-align:center">
+      <div style="width:34px;height:34px;border-radius:50%;background:#4299e1;opacity:.8;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:12px;border:2px dashed #2b6cb0">11</div>
+      <div style="font-size:10px;margin-top:2px">法定不计入</div>
+    </div>
+    <div style="position:absolute;left:42%;top:78%;transform:translate(-50%,-50%);text-align:center">
+      <div style="width:34px;height:34px;border-radius:50%;background:#ed8936;opacity:.8;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:12px;border:2px dashed #c05621">12</div>
+      <div style="font-size:10px;margin-top:2px">非全日制</div>
+    </div>
+    <div style="position:absolute;left:48%;top:88%;transform:translate(-50%,-50%);text-align:center">
+      <div style="width:30px;height:30px;border-radius:50%;background:#ed8936;opacity:.8;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:11px;border:2px dashed #c05621">13</div>
+      <div style="font-size:10px;margin-top:2px">实习生</div>
+    </div>
+    <div style="position:absolute;left:10%;top:90%;transform:translate(-50%,-50%);text-align:center">
+      <div style="width:30px;height:30px;border-radius:50%;background:#4299e1;opacity:.8;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:11px;border:2px dashed #2b6cb0">14</div>
+      <div style="font-size:10px;margin-top:2px">退休返聘</div>
     </div>
 
     <div style="position:absolute;left:14%;top:58%;font-size:12px;color:var(--green);font-weight:700;background:#f0fff4;padding:2px 8px;border-radius:4px">安全区域</div>
@@ -867,9 +1390,73 @@ td:first-child, th:first-child { text-align: left; }
       <td><span class="risk risk-low">低</span></td>
       <td>补缴差额 + 少量罚款</td>
     </tr>
+    <!-- 第二部分：可能改变用工状态 -->
+    <tr style="background:#fff8f0;border-top:2px solid var(--orange)">
+      <td style="font-weight:700">8</td>
+      <td style="font-weight:600">政府补贴</td>
+      <td>504</td>
+      <td style="color:var(--green);font-weight:700">1,554 万</td>
+      <td><span class="risk risk-med">中</span></td>
+      <td><span class="risk risk-vlow">极低</span></td>
+      <td>无处罚（合法申领）</td>
+    </tr>
+    <tr style="background:#fff8f0">
+      <td style="font-weight:700">9</td>
+      <td style="font-weight:600">残保金减免</td>
+      <td>250</td>
+      <td style="color:var(--green);font-weight:700">770 万</td>
+      <td><span class="risk risk-med">中</span></td>
+      <td><span class="risk risk-low">低</span></td>
+      <td>补缴残保金</td>
+    </tr>
+    <tr style="background:#fff8f0">
+      <td style="font-weight:700">10</td>
+      <td style="font-weight:600">企业年金</td>
+      <td>327</td>
+      <td style="color:var(--green);font-weight:700">1,006 万</td>
+      <td><span class="risk risk-high">高</span></td>
+      <td><span class="risk risk-low">低</span></td>
+      <td>调整年金方案</td>
+    </tr>
+    <tr style="background:#fff8f0">
+      <td style="font-weight:700">11</td>
+      <td style="font-weight:600">法定不计入项目</td>
+      <td>356</td>
+      <td style="color:var(--green);font-weight:700">1,094 万</td>
+      <td><span class="risk risk-low">低</span></td>
+      <td><span class="risk risk-low">低</span></td>
+      <td>补缴基数差额</td>
+    </tr>
+    <tr style="background:#fff8f0">
+      <td style="font-weight:700">12</td>
+      <td style="font-weight:600">非全日制用工</td>
+      <td>303*</td>
+      <td style="color:var(--green);font-weight:700">934 万</td>
+      <td><span class="risk risk-high">高</span></td>
+      <td><span class="risk risk-med">中</span></td>
+      <td>补缴全部社保 + 罚款</td>
+    </tr>
+    <tr style="background:#fff8f0">
+      <td style="font-weight:700">13</td>
+      <td style="font-weight:600">实习生</td>
+      <td>65*</td>
+      <td style="color:var(--green);font-weight:700">201 万</td>
+      <td><span class="risk risk-med">中</span></td>
+      <td><span class="risk risk-med">中</span></td>
+      <td>认定为事实劳动关系需补缴</td>
+    </tr>
+    <tr style="background:#fff8f0">
+      <td style="font-weight:700">14</td>
+      <td style="font-weight:600">退休返聘</td>
+      <td>33*</td>
+      <td style="color:var(--green);font-weight:700">101 万</td>
+      <td><span class="risk risk-low">低</span></td>
+      <td><span class="risk risk-vlow">极低</span></td>
+      <td>无处罚（合法用工形式）</td>
+    </tr>
   </table>
   <div style="font-size:12px;color:var(--text-sec);margin-top:8px">
-    * 方案五（薪资拆分+打折）基于 78% 基数折扣 + 30% 半年度拆分，人均月省 1,330 元；方案六受 14% 福利上限约束，按平均薪资 17,651 元计算，人均月省 508 元（6.5%）；方案七仅适用于低薪员工，全员平均节省有限。
+    * 方案五（薪资拆分+打折）基于 78% 基数折扣 + 30% 半年度拆分，人均月省 1,330 元；方案六受 14% 福利上限约束；方案七仅适用于低薪员工；方案 12（非全日制）仅适用于 5% 岗位，人均月省 303 元为全员平均；方案 13（实习生）仅覆盖 10 个岗位；方案 14（退休返聘）仅覆盖 5% 岗位。
   </div>
 </div>
 
@@ -879,16 +1466,26 @@ td:first-child, th:first-child { text-align: left; }
   <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
     <div class="verdict verdict-ok" style="margin:0;border-left-color:#805ad5;background:#faf5ff">
       <strong>首推：方案七（薪资拆分+基数打折）</strong>
-      七种方案中性价比最高的折中选择。年省 4,095 万（34.8%），比职工福利多将近两倍，但风险远低于费用报销和体外循环。不需要发票、不需要注册新公司，被查到最多补基数差额，不涉及刑事。员工实际收入不变，只是发放时间调整。实操中大量企业在用类似的薪资结构优化，可行性强。
+      十四种方案中性价比最高的不改变用工折中选择。年省 4,095 万（34.8%），比职工福利多将近两倍，但风险远低于费用报销和体外循环。不需要发票、不需要注册新公司，被查到最多补基数差额，不涉及刑事。员工实际收入不变，只是发放时间调整。实操中大量企业在用类似的薪资结构优化，可行性强。
     </div>
     <div class="verdict verdict-ok" style="margin:0">
       <strong>稳健备选：方案五（职工福利）</strong>
-      七种方案中唯一有国家文件明确支持的方式。受 14% 上限约束，年省 1,564 万。省的钱不多，但胜在安全、合规、经得起查。建议与方案七组合使用：日常用薪资拆分压低基数，同时把部分工资转为实物福利进一步降低基数。
+      不改变用工方案中唯一有国家文件明确支持的方式。受 14% 上限约束，年省 1,564 万。省的钱不多，但胜在安全、合规、经得起查。建议与方案七组合使用：日常用薪资拆分压低基数，同时把部分工资转为实物福利进一步降低基数。
+    </div>
+  </div>
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:16px;">
+    <div class="verdict verdict-ok" style="margin:0;border-left-color:#38a169;background:#f0fff4">
+      <strong>积极争取：方案八（政府补贴）</strong>
+      年省 1,554 万，风险极低。稳岗补贴、吸纳就业补贴、培训补贴等均有政策依据，合法合规。难点在于需主动申请且审批周期较长，建议指定专人跟进政策窗口。与方案七叠加使用效果最佳。
+    </div>
+    <div class="verdict verdict-ok" style="margin:0;border-left-color:#4299e1;background:#ebf8ff">
+      <strong>配套使用：方案十一（法定不计入项目）</strong>
+      年省 1,094 万，风险低。加班费、出差津贴等依法不计入缴费基数，只需在工资结构中明确列示。建议与方案七配合，进一步压低社保基数。企业年金（方案十）和残保金减免（方案九）也可作为补充手段。
     </div>
   </div>
   <div class="verdict verdict-warn" style="margin-top:16px">
-    <strong>补充：方案六（社保洼地）</strong>
-    合法合规但适用范围有限。仅对低薪员工多的公司有效。对于本企业（平均薪资 17,651 元），大部分员工已超出最低基数，实际收益有限。可与方案七、方案五组合使用。
+    <strong>补充：方案六（社保洼地）+ 方案十二至十四（改变用工形式）</strong>
+    社保洼地仅对低薪员工多的公司有效，本企业平均薪资 17,651 元，实际收益有限。非全日制（方案十二）、实习生（方案十三）、退休返聘（方案十四）虽能节省 97%+ 的社保，但需要改变用工状态：非全日制每日不超 4 小时、实习生需学校合作、退休返聘适用面窄。这些方案适合特定岗位而非全员推广，可与主力方案组合使用。
   </div>
   <div class="verdict verdict-danger" style="margin-top:16px">
     <strong>警告：方案一至四均不建议大规模使用</strong>
