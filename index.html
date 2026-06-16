@@ -27,39 +27,39 @@
   --darkred-bg: #feb2b2;
 }
 * { margin:0; padding:0; box-sizing:border-box; }
-body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
-.container { max-width: 860px; margin: 0 auto; padding: 16px 12px; }
+body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; font-size: 13px; }
+.container { max-width: 820px; margin: 0 auto; padding: 12px 10px; }
 
 /* Header */
-.header { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); color: #fff; padding: 28px 24px; border-radius: 12px; margin-bottom: 20px; }
-.header h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
-.header p { font-size: 15px; opacity: .85; }
-.header .meta { margin-top: 16px; display: flex; gap: 24px; font-size: 13px; opacity: .7; }
+.header { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); color: #fff; padding: 18px 18px; border-radius: 10px; margin-bottom: 14px; }
+.header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+.header p { font-size: 13px; opacity: .85; }
+.header .meta { margin-top: 10px; display: flex; gap: 16px; font-size: 11px; opacity: .7; }
 
 /* Summary cards */
-.summary-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 20px; }
-.s-card { background: var(--card); border-radius: 10px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,.06); border-left: 4px solid var(--accent); }
-.s-card .label { font-size: 12px; color: var(--text-sec); margin-bottom: 4px; }
-.s-card .value { font-size: 24px; font-weight: 700; color: var(--primary); }
-.s-card .unit { font-size: 13px; color: var(--text-sec); font-weight: 400; }
+.summary-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 14px; }
+.s-card { background: var(--card); border-radius: 8px; padding: 12px 14px; box-shadow: 0 1px 3px rgba(0,0,0,.06); border-left: 3px solid var(--accent); }
+.s-card .label { font-size: 11px; color: var(--text-sec); margin-bottom: 2px; }
+.s-card .value { font-size: 20px; font-weight: 700; color: var(--primary); }
+.s-card .unit { font-size: 11px; color: var(--text-sec); font-weight: 400; }
 .s-card.red { border-left-color: var(--red); }
 .s-card.green { border-left-color: var(--green); }
 .s-card.orange { border-left-color: var(--orange); }
 
 /* Section */
-.section { background: var(--card); border-radius: 10px; padding: 20px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
-.section h2 { font-size: 18px; color: var(--primary); margin-bottom: 16px; padding-bottom: 10px; border-bottom: 2px solid var(--accent-light); }
-.section h3 { font-size: 15px; color: var(--primary-light); margin: 16px 0 8px; }
+.section { background: var(--card); border-radius: 8px; padding: 14px 16px; margin-bottom: 12px; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+.section h2 { font-size: 15px; color: var(--primary); margin-bottom: 10px; padding-bottom: 6px; border-bottom: 2px solid var(--accent-light); }
+.section h3 { font-size: 13px; color: var(--primary-light); margin: 10px 0 6px; }
 
 /* Tables */
-table { width: 100%; border-collapse: collapse; font-size: 13px; }
-th { background: #edf2f7; color: var(--primary); font-weight: 600; padding: 8px 10px; text-align: center; border: 1px solid var(--border); white-space: nowrap; }
-td { padding: 7px 10px; text-align: center; border: 1px solid var(--border); }
+table { width: 100%; border-collapse: collapse; font-size: 12px; }
+th { background: #edf2f7; color: var(--primary); font-weight: 600; padding: 5px 6px; text-align: center; border: 1px solid var(--border); white-space: nowrap; }
+td { padding: 4px 6px; text-align: center; border: 1px solid var(--border); }
 tr:nth-child(even) { background: #f7fafc; }
 td:first-child, th:first-child { text-align: left; }
 
 /* Risk badge */
-.risk { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 12px; font-weight: 600; white-space: nowrap; }
+.risk { display: inline-block; padding: 1px 8px; border-radius: 10px; font-size: 11px; font-weight: 600; white-space: nowrap; }
 .risk-low { background: var(--green-bg); color: var(--green); }
 .risk-vlow { background: #e6fffa; color: #234e52; }
 .risk-med { background: var(--yellow-bg); color: var(--yellow); }
@@ -68,38 +68,38 @@ td:first-child, th:first-child { text-align: left; }
 .risk-xhigh { background: var(--darkred-bg); color: var(--darkred); }
 
 /* Method card */
-.method { background: var(--card); border-radius: 10px; padding: 0; margin-bottom: 20px; box-shadow: 0 1px 4px rgba(0,0,0,.07); overflow: hidden; }
-.method-head { padding: 16px 20px; display: flex; justify-content: space-between; align-items: center; }
-.method-head h2 { font-size: 17px; margin: 0; padding: 0; border: none; }
-.method-head .num { font-size: 13px; color: var(--accent); font-weight: 600; margin-bottom: 4px; }
-.method-head .desc { font-size: 13px; color: var(--text-sec); margin-top: 2px; }
-.method-body { padding: 0 20px 20px; }
-.method-body .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.method { background: var(--card); border-radius: 8px; padding: 0; margin-bottom: 14px; box-shadow: 0 1px 4px rgba(0,0,0,.07); overflow: hidden; }
+.method-head { padding: 12px 16px; display: flex; justify-content: space-between; align-items: center; }
+.method-head h2 { font-size: 15px; margin: 0; padding: 0; border: none; }
+.method-head .num { font-size: 11px; color: var(--accent); font-weight: 600; margin-bottom: 2px; }
+.method-head .desc { font-size: 12px; color: var(--text-sec); margin-top: 1px; }
+.method-body { padding: 0 16px 14px; }
+.method-body .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 
 /* Pros & Cons */
-.pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 14px; }
-.pro-box, .con-box { padding: 12px 14px; border-radius: 8px; font-size: 13px; }
+.pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
+.pro-box, .con-box { padding: 8px 10px; border-radius: 6px; font-size: 12px; }
 .pro-box { background: #f0fff4; border: 1px solid #c6f6d5; }
 .con-box { background: #fff5f5; border: 1px solid #fed7d7; }
-.pro-box .tag, .con-box .tag { font-size: 11px; font-weight: 700; margin-bottom: 6px; }
+.pro-box .tag, .con-box .tag { font-size: 10px; font-weight: 700; margin-bottom: 4px; }
 .pro-box .tag { color: var(--green); }
 .con-box .tag { color: var(--red); }
-.pro-box li, .con-box li { margin-left: 16px; margin-bottom: 3px; }
+.pro-box li, .con-box li { margin-left: 14px; margin-bottom: 2px; font-size: 11px; }
 
 /* Cost highlight */
-.cost-highlight { background: #ebf8ff; border: 1px solid #bee3f8; border-radius: 8px; padding: 14px; margin-bottom: 14px; }
-.cost-row { display: flex; justify-content: space-between; padding: 4px 0; font-size: 13px; }
+.cost-highlight { background: #ebf8ff; border: 1px solid #bee3f8; border-radius: 6px; padding: 10px; margin-bottom: 10px; }
+.cost-row { display: flex; justify-content: space-between; padding: 2px 0; font-size: 12px; }
 .cost-row .label { color: var(--text-sec); }
 .cost-row .val { font-weight: 600; color: var(--primary); }
-.cost-row.saving .val { color: var(--green); font-size: 15px; }
+.cost-row.saving .val { color: var(--green); font-size: 13px; }
 .cost-row.extra .val { color: var(--red); }
 
 /* Verdict */
-.verdict { padding: 14px 16px; border-radius: 8px; margin-top: 14px; font-size: 13px; }
-.verdict-ok { background: #f0fff4; border-left: 4px solid var(--green); }
-.verdict-warn { background: #fffff0; border-left: 4px solid var(--yellow); }
-.verdict-danger { background: #fff5f5; border-left: 4px solid var(--red); }
-.verdict strong { display: block; margin-bottom: 4px; }
+.verdict { padding: 10px 12px; border-radius: 6px; margin-top: 10px; font-size: 12px; }
+.verdict-ok { background: #f0fff4; border-left: 3px solid var(--green); }
+.verdict-warn { background: #fffff0; border-left: 3px solid var(--yellow); }
+.verdict-danger { background: #fff5f5; border-left: 3px solid var(--red); }
+.verdict strong { display: block; margin-bottom: 3px; font-size: 13px; }
 
 /* Color tags for method heads */
 .m-bg-1 { background: linear-gradient(135deg, #fff5f5 0%, #fed7d7 100%); border-bottom: 2px solid #feb2b2; }
@@ -110,7 +110,7 @@ td:first-child, th:first-child { text-align: left; }
 .m-bg-6 { background: linear-gradient(135deg, #ebf8ff 0%, #bee3f8 100%); border-bottom: 2px solid #90cdf4; }
 
 /* Footer */
-.footer { text-align: center; padding: 20px; font-size: 12px; color: var(--text-sec); }
+.footer { text-align: center; padding: 14px; font-size: 11px; color: var(--text-sec); }
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -221,10 +221,10 @@ td:first-child, th:first-child { text-align: left; }
 <!-- ===== 方案一：费用报销 ===== -->
 <div class="method">
   <div class="method-head m-bg-1">
-    <div style="display:flex;align-items:center;gap:16px">
-      <div style="background:rgba(255,255,255,.7);border-radius:8px;padding:8px 14px;text-align:center;min-width:90px">
+    <div style="display:flex;align-items:center;gap:12px">
+      <div style="background:rgba(255,255,255,.7);border-radius:6px;padding:5px 10px;text-align:center;min-width:72px">
         <div style="font-size:11px;color:var(--text-sec);line-height:1.2">年节省</div>
-        <div style="font-size:20px;font-weight:700;color:var(--green);line-height:1.2">6,156<span style="font-size:13px;font-weight:400">万</span></div>
+        <div style="font-size:17px;font-weight:700;color:var(--green);line-height:1.2">6,156<span style="font-size:13px;font-weight:400">万</span></div>
       </div>
       <div>
         <div class="num">方案一</div>
@@ -285,10 +285,10 @@ td:first-child, th:first-child { text-align: left; }
 <!-- ===== 方案二：人员身份拆分 ===== -->
 <div class="method">
   <div class="method-head m-bg-4">
-    <div style="display:flex;align-items:center;gap:16px">
-      <div style="background:rgba(255,255,255,.7);border-radius:8px;padding:8px 14px;text-align:center;min-width:90px">
+    <div style="display:flex;align-items:center;gap:12px">
+      <div style="background:rgba(255,255,255,.7);border-radius:6px;padding:5px 10px;text-align:center;min-width:72px">
         <div style="font-size:11px;color:var(--text-sec);line-height:1.2">年节省</div>
-        <div style="font-size:20px;font-weight:700;color:var(--green);line-height:1.2">6,156<span style="font-size:13px;font-weight:400">万</span></div>
+        <div style="font-size:17px;font-weight:700;color:var(--green);line-height:1.2">6,156<span style="font-size:13px;font-weight:400">万</span></div>
       </div>
       <div>
         <div class="num">方案二</div>
@@ -346,10 +346,10 @@ td:first-child, th:first-child { text-align: left; }
 <!-- ===== 方案三：体外循环 ===== -->
 <div class="method">
   <div class="method-head m-bg-2">
-    <div style="display:flex;align-items:center;gap:16px">
-      <div style="background:rgba(255,255,255,.7);border-radius:8px;padding:8px 14px;text-align:center;min-width:90px">
+    <div style="display:flex;align-items:center;gap:12px">
+      <div style="background:rgba(255,255,255,.7);border-radius:6px;padding:5px 10px;text-align:center;min-width:72px">
         <div style="font-size:11px;color:var(--text-sec);line-height:1.2">年节省</div>
-        <div style="font-size:20px;font-weight:700;color:var(--green);line-height:1.2">6,156<span style="font-size:13px;font-weight:400">万</span></div>
+        <div style="font-size:17px;font-weight:700;color:var(--green);line-height:1.2">6,156<span style="font-size:13px;font-weight:400">万</span></div>
       </div>
       <div>
         <div class="num">方案三</div>
@@ -405,10 +405,10 @@ td:first-child, th:first-child { text-align: left; }
 <!-- ===== 方案四：亲属拆分 ===== -->
 <div class="method">
   <div class="method-head m-bg-5">
-    <div style="display:flex;align-items:center;gap:16px">
-      <div style="background:rgba(255,255,255,.7);border-radius:8px;padding:8px 14px;text-align:center;min-width:90px">
+    <div style="display:flex;align-items:center;gap:12px">
+      <div style="background:rgba(255,255,255,.7);border-radius:6px;padding:5px 10px;text-align:center;min-width:72px">
         <div style="font-size:11px;color:var(--text-sec);line-height:1.2">年节省</div>
-        <div style="font-size:20px;font-weight:700;color:var(--green);line-height:1.2">6,156<span style="font-size:13px;font-weight:400">万</span></div>
+        <div style="font-size:17px;font-weight:700;color:var(--green);line-height:1.2">6,156<span style="font-size:13px;font-weight:400">万</span></div>
       </div>
       <div>
         <div class="num">方案四</div>
@@ -465,10 +465,10 @@ td:first-child, th:first-child { text-align: left; }
 <!-- ===== 方案五：职工福利 ===== -->
 <div class="method">
   <div class="method-head m-bg-3">
-    <div style="display:flex;align-items:center;gap:16px">
-      <div style="background:rgba(255,255,255,.7);border-radius:8px;padding:8px 14px;text-align:center;min-width:90px">
+    <div style="display:flex;align-items:center;gap:12px">
+      <div style="background:rgba(255,255,255,.7);border-radius:6px;padding:5px 10px;text-align:center;min-width:72px">
         <div style="font-size:11px;color:var(--text-sec);line-height:1.2">年节省</div>
-        <div style="font-size:20px;font-weight:700;color:var(--green);line-height:1.2">1,564<span style="font-size:13px;font-weight:400">万</span></div>
+        <div style="font-size:17px;font-weight:700;color:var(--green);line-height:1.2">1,564<span style="font-size:13px;font-weight:400">万</span></div>
       </div>
       <div>
         <div class="num">方案五</div>
@@ -533,10 +533,10 @@ td:first-child, th:first-child { text-align: left; }
 <!-- ===== 方案六：社保洼地 ===== -->
 <div class="method">
   <div class="method-head m-bg-6">
-    <div style="display:flex;align-items:center;gap:16px">
-      <div style="background:rgba(255,255,255,.7);border-radius:8px;padding:8px 14px;text-align:center;min-width:90px">
+    <div style="display:flex;align-items:center;gap:12px">
+      <div style="background:rgba(255,255,255,.7);border-radius:6px;padding:5px 10px;text-align:center;min-width:72px">
         <div style="font-size:11px;color:var(--text-sec);line-height:1.2">年节省</div>
-        <div style="font-size:20px;font-weight:700;color:var(--green);line-height:1.2">1,081<span style="font-size:13px;font-weight:400">万</span></div>
+        <div style="font-size:17px;font-weight:700;color:var(--green);line-height:1.2">1,081<span style="font-size:13px;font-weight:400">万</span></div>
       </div>
       <div>
         <div class="num">方案六</div>
@@ -598,10 +598,10 @@ td:first-child, th:first-child { text-align: left; }
 <!-- ===== 方案七：薪资结构拆分 ===== -->
 <div class="method">
   <div class="method-head" style="background: linear-gradient(135deg, #e9d8fd 0%, #d6bcfa 100%); border-bottom: 2px solid #b794f4;">
-    <div style="display:flex;align-items:center;gap:16px">
-      <div style="background:rgba(255,255,255,.7);border-radius:8px;padding:8px 14px;text-align:center;min-width:90px">
+    <div style="display:flex;align-items:center;gap:12px">
+      <div style="background:rgba(255,255,255,.7);border-radius:6px;padding:5px 10px;text-align:center;min-width:72px">
         <div style="font-size:11px;color:var(--text-sec);line-height:1.2">年节省</div>
-        <div style="font-size:20px;font-weight:700;color:var(--green);line-height:1.2">4,095<span style="font-size:13px;font-weight:400">万</span></div>
+        <div style="font-size:17px;font-weight:700;color:var(--green);line-height:1.2">4,095<span style="font-size:13px;font-weight:400">万</span></div>
       </div>
       <div>
         <div class="num">方案七（来自测算看板）</div>
@@ -675,10 +675,10 @@ td:first-child, th:first-child { text-align: left; }
 <!-- ===== 方案八：法定不计入社保基数项目优化 ===== -->
 <div class="method">
   <div class="method-head" style="background:linear-gradient(135deg,#c6f6d5 0%,#9ae6b4 100%);border-bottom:2px solid #68d391">
-    <div style="display:flex;align-items:center;gap:16px">
-      <div style="background:rgba(255,255,255,.7);border-radius:8px;padding:8px 14px;text-align:center;min-width:90px">
+    <div style="display:flex;align-items:center;gap:12px">
+      <div style="background:rgba(255,255,255,.7);border-radius:6px;padding:5px 10px;text-align:center;min-width:72px">
         <div style="font-size:11px;color:var(--text-sec);line-height:1.2">年节省</div>
-        <div style="font-size:20px;font-weight:700;color:var(--green);line-height:1.2">1,094<span style="font-size:13px;font-weight:400">万</span></div>
+        <div style="font-size:17px;font-weight:700;color:var(--green);line-height:1.2">1,094<span style="font-size:13px;font-weight:400">万</span></div>
       </div>
       <div>
         <div class="num">方案八（需改变用工）</div>
@@ -741,10 +741,10 @@ td:first-child, th:first-child { text-align: left; }
 <!-- ===== 方案九：政府补贴申领 ===== -->
 <div class="method">
   <div class="method-head" style="background:linear-gradient(135deg,#c6f6d5 0%,#9ae6b4 100%);border-bottom:2px solid #68d391">
-    <div style="display:flex;align-items:center;gap:16px">
-      <div style="background:rgba(255,255,255,.7);border-radius:8px;padding:8px 14px;text-align:center;min-width:90px">
+    <div style="display:flex;align-items:center;gap:12px">
+      <div style="background:rgba(255,255,255,.7);border-radius:6px;padding:5px 10px;text-align:center;min-width:72px">
         <div style="font-size:11px;color:var(--text-sec);line-height:1.2">年节省</div>
-        <div style="font-size:20px;font-weight:700;color:var(--green);line-height:1.2">1,554<span style="font-size:13px;font-weight:400">万</span></div>
+        <div style="font-size:17px;font-weight:700;color:var(--green);line-height:1.2">1,554<span style="font-size:13px;font-weight:400">万</span></div>
       </div>
       <div>
         <div class="num">方案九（可能改变用工）</div>
@@ -795,10 +795,10 @@ td:first-child, th:first-child { text-align: left; }
 <!-- ===== 方案十：残保金减免 ===== -->
 <div class="method">
   <div class="method-head" style="background:linear-gradient(135deg,#c6f6d5 0%,#9ae6b4 100%);border-bottom:2px solid #68d391">
-    <div style="display:flex;align-items:center;gap:16px">
-      <div style="background:rgba(255,255,255,.7);border-radius:8px;padding:8px 14px;text-align:center;min-width:90px">
+    <div style="display:flex;align-items:center;gap:12px">
+      <div style="background:rgba(255,255,255,.7);border-radius:6px;padding:5px 10px;text-align:center;min-width:72px">
         <div style="font-size:11px;color:var(--text-sec);line-height:1.2">年节省</div>
-        <div style="font-size:20px;font-weight:700;color:var(--green);line-height:1.2">770<span style="font-size:13px;font-weight:400">万</span></div>
+        <div style="font-size:17px;font-weight:700;color:var(--green);line-height:1.2">770<span style="font-size:13px;font-weight:400">万</span></div>
       </div>
       <div>
         <div class="num">方案十（可能改变用工）</div>
@@ -850,10 +850,10 @@ td:first-child, th:first-child { text-align: left; }
 <!-- ===== 方案十一：企业年金 ===== -->
 <div class="method">
   <div class="method-head" style="background:linear-gradient(135deg,#e9d8fd 0%,#d6bcfa 100%);border-bottom:2px solid #b794f4">
-    <div style="display:flex;align-items:center;gap:16px">
-      <div style="background:rgba(255,255,255,.7);border-radius:8px;padding:8px 14px;text-align:center;min-width:90px">
+    <div style="display:flex;align-items:center;gap:12px">
+      <div style="background:rgba(255,255,255,.7);border-radius:6px;padding:5px 10px;text-align:center;min-width:72px">
         <div style="font-size:11px;color:var(--text-sec);line-height:1.2">年节省</div>
-        <div style="font-size:20px;font-weight:700;color:var(--green);line-height:1.2">1,006<span style="font-size:13px;font-weight:400">万</span></div>
+        <div style="font-size:17px;font-weight:700;color:var(--green);line-height:1.2">1,006<span style="font-size:13px;font-weight:400">万</span></div>
       </div>
       <div>
         <div class="num">方案十一（可能改变用工）</div>
@@ -909,10 +909,10 @@ td:first-child, th:first-child { text-align: left; }
 <!-- ===== 方案十二：退休返聘 ===== -->
 <div class="method">
   <div class="method-head" style="background:linear-gradient(135deg,#feebc8 0%,#fbd38d 100%);border-bottom:2px solid #f6ad55">
-    <div style="display:flex;align-items:center;gap:16px">
-      <div style="background:rgba(255,255,255,.7);border-radius:8px;padding:8px 14px;text-align:center;min-width:90px">
+    <div style="display:flex;align-items:center;gap:12px">
+      <div style="background:rgba(255,255,255,.7);border-radius:6px;padding:5px 10px;text-align:center;min-width:72px">
         <div style="font-size:11px;color:var(--text-sec);line-height:1.2">年节省</div>
-        <div style="font-size:20px;font-weight:700;color:var(--green);line-height:1.2">101<span style="font-size:13px;font-weight:400">万</span></div>
+        <div style="font-size:17px;font-weight:700;color:var(--green);line-height:1.2">101<span style="font-size:13px;font-weight:400">万</span></div>
       </div>
       <div>
         <div class="num">方案十二（需改变用工）</div>
@@ -966,10 +966,10 @@ td:first-child, th:first-child { text-align: left; }
 <!-- ===== 方案十三：在校实习生 ===== -->
 <div class="method">
   <div class="method-head" style="background:linear-gradient(135deg,#feebc8 0%,#fbd38d 100%);border-bottom:2px solid #f6ad55">
-    <div style="display:flex;align-items:center;gap:16px">
-      <div style="background:rgba(255,255,255,.7);border-radius:8px;padding:8px 14px;text-align:center;min-width:90px">
+    <div style="display:flex;align-items:center;gap:12px">
+      <div style="background:rgba(255,255,255,.7);border-radius:6px;padding:5px 10px;text-align:center;min-width:72px">
         <div style="font-size:11px;color:var(--text-sec);line-height:1.2">年节省</div>
-        <div style="font-size:20px;font-weight:700;color:var(--green);line-height:1.2">201<span style="font-size:13px;font-weight:400">万</span></div>
+        <div style="font-size:17px;font-weight:700;color:var(--green);line-height:1.2">201<span style="font-size:13px;font-weight:400">万</span></div>
       </div>
       <div>
         <div class="num">方案十三（需改变用工）</div>
@@ -1023,10 +1023,10 @@ td:first-child, th:first-child { text-align: left; }
 <!-- ===== 方案十四：非全日制用工 ===== -->
 <div class="method">
   <div class="method-head" style="background:linear-gradient(135deg,#feebc8 0%,#fbd38d 100%);border-bottom:2px solid #f6ad55">
-    <div style="display:flex;align-items:center;gap:16px">
-      <div style="background:rgba(255,255,255,.7);border-radius:8px;padding:8px 14px;text-align:center;min-width:90px">
+    <div style="display:flex;align-items:center;gap:12px">
+      <div style="background:rgba(255,255,255,.7);border-radius:6px;padding:5px 10px;text-align:center;min-width:72px">
         <div style="font-size:11px;color:var(--text-sec);line-height:1.2">年节省</div>
-        <div style="font-size:20px;font-weight:700;color:var(--green);line-height:1.2">934<span style="font-size:13px;font-weight:400">万</span></div>
+        <div style="font-size:17px;font-weight:700;color:var(--green);line-height:1.2">934<span style="font-size:13px;font-weight:400">万</span></div>
       </div>
       <div>
         <div class="num">方案十四（需改变用工）</div>
