@@ -991,29 +991,33 @@ td:first-child, th:first-child { text-align: left; }
 </div>
 
 <!-- ===== 方案十二：退休返聘 ===== -->
-<div class="method">
-  <div class="method-head" style="background:linear-gradient(135deg,#feebc8 0%,#fbd38d 100%);border-bottom:2px solid #f6ad55">
+<div style="position:relative">
+<div class="method" style="filter:grayscale(0.45);opacity:0.7">
+  <div class="method-head" style="background:linear-gradient(135deg,#e8e8e8 0%,#d0d0d0 100%);border-bottom:2px solid #b0b0b0">
     <div>
-        <div class="num">方案十二（需改变用工）</div>
-        <h2>退休返聘（免缴五险）</h2>
-        <div class="desc">招聘已退休并领取养老金的人员，签劳务协议而非劳动合同，企业完全免除五险缴纳义务</div>
+        <div class="num" style="color:#888">方案十二（需改变用工）<span style="margin-left:6px;background:#c53030;color:#fff;font-size:10px;padding:2px 6px;border-radius:3px;font-weight:600">不建议</span></div>
+        <h2 style="color:#555">退休返聘（免缴五险）</h2>
+        <div class="desc" style="color:#999">招聘已退休并领取养老金的人员，签劳务协议而非劳动合同，企业完全免除五险缴纳义务</div>
       </div>
     <div style="display:flex;align-items:center;gap:10px;flex-shrink:0">
       <div style="background:rgba(255,255,255,.7);border-radius:6px;padding:5px 10px;text-align:center;min-width:72px">
-        <div style="font-size:11px;color:var(--text-sec);line-height:1.2">年节省</div>
-        <div style="font-size:17px;font-weight:700;color:var(--green);line-height:1.2">101<span style="font-size:13px;font-weight:400">万</span></div>
+        <div style="font-size:11px;color:#aaa;line-height:1.2">年节省</div>
+        <div style="font-size:17px;font-weight:700;color:#aaa;line-height:1.2">101<span style="font-size:13px;font-weight:400">万</span></div>
       </div>
-      <div style="text-align:right"><span class="risk risk-low">风险：低</span></div>
+      <div style="text-align:right"><span class="risk" style="background:#e2e8f0;color:#718096;border:1px solid #cbd5e0">不建议</span></div>
     </div>
   </div>
   <div class="method-body">
     <div class="cols">
       <div>
         <h3>怎么操作的</h3>
-        <div style="font-size:13px;padding:12px;background:#fffaf0;border-radius:8px;border:1px solid #feebc8;margin-bottom:14px">
+        <div style="font-size:13px;padding:12px;background:#f7f7f7;border-radius:8px;border:1px solid #ddd;margin-bottom:14px">
           退休人员已经领养老金了，不需要再交社保。企业跟他们签的是"劳务协议"（不是劳动合同），按劳务费结算报酬。<br><br>
           <strong>法律依据：</strong>《劳动合同法》第44条——劳动者开始享受养老保险待遇的，劳动合同终止。最高法司法解释也明确：退休返聘属于劳务关系。<br><br>
           <strong>注意：</strong>需要购买商业意外险或雇主责任险，覆盖工作中的意外风险。
+        </div>
+        <div style="font-size:13px;padding:10px 12px;background:#fff5f5;border-radius:6px;border-left:3px solid #c53030;margin-bottom:14px;color:#742a2a">
+          <strong>⚠ 不建议采用：</strong>该方案适用面极窄（仅经验型岗位），无法规模化。退休人员体力、效率、稳定性均受限，强行推广将严重影响团队战斗力。展示此方案仅供认知参考，不建议纳入实际执行计划。
         </div>
         <h3>成本测算</h3>
         <div class="cost-highlight">
@@ -1040,37 +1044,49 @@ td:first-child, th:first-child { text-align: left; }
         </div>
       </div>
     </div>
-    <div class="verdict verdict-ok">
-      <strong>综合判定：节省比例极高但适用面窄</strong>
-      退休返聘是法律明确允许的免缴社保路径。单个人节省接近 100%，但全公司能用的人很少。适合技术顾问、管理咨询、培训导师等经验型岗位。
+    <div class="verdict" style="background:#f7f7f7;border-left:3px solid #a0aec0;color:#718096">
+      <strong style="color:#718096">综合判定：不建议纳入执行方案</strong>
+      <span style="color:#888">退休返聘在法律上可行，但实际操作价值极低。适用面仅限于顾问、培训等少数岗位，无法作为降本主力。且退休人员受体力、精力限制，长期稳定性差，不建议将企业降本押注于此方向。本方案仅作知识展示，不建议采用。</span>
     </div>
   </div>
 </div>
+<!-- 不建议遮罩 -->
+<div style="position:absolute;top:0;left:0;right:0;bottom:0;pointer-events:none;display:flex;align-items:center;justify-content:center;z-index:10">
+  <div style="background:rgba(255,255,255,0.75);border:2px solid #c53030;border-radius:10px;padding:12px 28px;backdrop-filter:blur(1px);box-shadow:0 4px 16px rgba(197,48,48,0.15)">
+    <div style="font-size:22px;font-weight:800;color:#c53030;letter-spacing:4px">不建议采用</div>
+    <div style="font-size:12px;color:#742a2a;text-align:center;margin-top:4px">仅作知识展示，不纳入执行方案</div>
+  </div>
+</div>
+</div>
 
 <!-- ===== 方案十三：在校实习生 ===== -->
-<div class="method">
-  <div class="method-head" style="background:linear-gradient(135deg,#feebc8 0%,#fbd38d 100%);border-bottom:2px solid #f6ad55">
+<div style="position:relative">
+<div class="method" style="filter:grayscale(0.45);opacity:0.7">
+  <div class="method-head" style="background:linear-gradient(135deg,#e8e8e8 0%,#d0d0d0 100%);border-bottom:2px solid #b0b0b0">
     <div>
-        <div class="num">方案十三（需改变用工）</div>
-        <h2>在校实习生用工（免缴社保）</h2>
-        <div class="desc">招募未毕业的在校生签实习协议，不构成劳动关系，完全免除社保缴纳义务</div>
+        <div class="num" style="color:#888">方案十三（需改变用工）<span style="margin-left:6px;background:#c53030;color:#fff;font-size:10px;padding:2px 6px;border-radius:3px;font-weight:600">不建议</span></div>
+        <h2 style="color:#555">在校实习生用工（免缴社保）</h2>
+        <div class="desc" style="color:#999">招募未毕业的在校生签实习协议，不构成劳动关系，完全免除社保缴纳义务</div>
       </div>
     <div style="display:flex;align-items:center;gap:10px;flex-shrink:0">
       <div style="background:rgba(255,255,255,.7);border-radius:6px;padding:5px 10px;text-align:center;min-width:72px">
-        <div style="font-size:11px;color:var(--text-sec);line-height:1.2">年节省</div>
-        <div style="font-size:17px;font-weight:700;color:var(--green);line-height:1.2">201<span style="font-size:13px;font-weight:400">万</span></div>
+        <div style="font-size:11px;color:#aaa;line-height:1.2">年节省</div>
+        <div style="font-size:17px;font-weight:700;color:#aaa;line-height:1.2">201<span style="font-size:13px;font-weight:400">万</span></div>
       </div>
-      <div style="text-align:right"><span class="risk risk-med">风险：中</span></div>
+      <div style="text-align:right"><span class="risk" style="background:#e2e8f0;color:#718096;border:1px solid #cbd5e0">不建议</span></div>
     </div>
   </div>
   <div class="method-body">
     <div class="cols">
       <div>
         <h3>怎么操作的</h3>
-        <div style="font-size:13px;padding:12px;background:#fffaf0;border-radius:8px;border:1px solid #feebc8;margin-bottom:14px">
+        <div style="font-size:13px;padding:12px;background:#f7f7f7;border-radius:8px;border:1px solid #ddd;margin-bottom:14px">
           在校大学生不算"劳动者"，和企业之间不构成劳动关系。签的是"实习协议"（三方协议：学校-企业-学生），不需要交社保。<br><br>
           <strong>法律依据：</strong>原劳动部《关于贯彻执行劳动法若干问题的意见》第12条：在校生利用业余时间勤工助学，不视为就业。<br><br>
           <strong>关键：</strong>必须是全日制在校学生，毕业后需及时转正或终止。
+        </div>
+        <div style="font-size:13px;padding:10px 12px;background:#fff5f5;border-radius:6px;border-left:3px solid #c53030;margin-bottom:14px;color:#742a2a">
+          <strong>⚠ 不建议采用：</strong>以降本为目的大规模使用实习生，极易触发"假实习真用工"认定，一旦被查，补缴社保+滞纳金+罚款远超节省金额。实习生能力有限、流动性极高，对业务连续性和团队稳定性造成严重冲击。展示此方案仅供认知参考，不建议纳入实际执行计划。
         </div>
         <h3>成本测算</h3>
         <div class="cost-highlight">
@@ -1097,11 +1113,19 @@ td:first-child, th:first-child { text-align: left; }
         </div>
       </div>
     </div>
-    <div class="verdict verdict-warn">
-      <strong>综合判定：适合有校企合作基础的企业</strong>
-      实习生用工是合法的免缴社保路径，节省接近 100%。但适用面有限，且需要与高校建立稳定合作关系。管理方式必须区别于正式员工，避免"假实习真用工"。
+    <div class="verdict" style="background:#f7f7f7;border-left:3px solid #a0aec0;color:#718096">
+      <strong style="color:#718096">综合判定：不建议纳入执行方案</strong>
+      <span style="color:#888">实习生免缴社保在法律上成立，但以此为降本手段风险极高。大规模使用实习生替代正式岗位，在监管层面极易被认定为"假实习真用工"，后果严重。且实习生缺乏经验、稳定性差，对业务质量和团队文化均有负面影响。本方案仅作知识展示，不建议采用。</span>
     </div>
   </div>
+</div>
+<!-- 不建议遮罩 -->
+<div style="position:absolute;top:0;left:0;right:0;bottom:0;pointer-events:none;display:flex;align-items:center;justify-content:center;z-index:10">
+  <div style="background:rgba(255,255,255,0.75);border:2px solid #c53030;border-radius:10px;padding:12px 28px;backdrop-filter:blur(1px);box-shadow:0 4px 16px rgba(197,48,48,0.15)">
+    <div style="font-size:22px;font-weight:800;color:#c53030;letter-spacing:4px">不建议采用</div>
+    <div style="font-size:12px;color:#742a2a;text-align:center;margin-top:4px">仅作知识展示，不纳入执行方案</div>
+  </div>
+</div>
 </div>
 
 <!-- ===== 方案十四：非全日制用工 ===== -->
@@ -1301,25 +1325,25 @@ td:first-child, th:first-child { text-align: left; }
       <td><span class="risk risk-med">中</span></td>
       <td style="font-weight:700;color:var(--green)">B</td>
     </tr>
-    <tr style="background:#fff8f0">
-      <td style="font-weight:700">13</td>
-      <td style="font-weight:600">实习生</td>
-      <td style="text-align:left;font-size:12px">部分岗位用实习生替代</td>
-      <td style="color:var(--green);font-weight:700">6,429</td>
-      <td>98.5%</td>
-      <td style="font-weight:700">14 万</td>
-      <td><span class="risk risk-med">中</span></td>
-      <td style="font-weight:700;color:var(--orange)">B-</td>
+    <tr style="background:#f5f5f5;opacity:0.55">
+      <td style="font-weight:700;color:#999">13</td>
+      <td style="font-weight:600;color:#888">实习生 <span style="font-size:10px;background:#e2e8f0;color:#718096;padding:1px 5px;border-radius:3px">不建议</span></td>
+      <td style="text-align:left;font-size:12px;color:#999">部分岗位用实习生替代</td>
+      <td style="color:#aaa;font-weight:700">6,429</td>
+      <td style="color:#aaa">98.5%</td>
+      <td style="font-weight:700;color:#aaa">14 万</td>
+      <td><span style="background:#e2e8f0;color:#718096;border:1px solid #cbd5e0;font-size:11px;padding:2px 6px;border-radius:4px">不建议</span></td>
+      <td style="font-weight:700;color:#aaa">—</td>
     </tr>
-    <tr style="background:#fff8f0">
-      <td style="font-weight:700">14</td>
-      <td style="font-weight:600">退休返聘</td>
-      <td style="text-align:left;font-size:12px">退休员工不缴社保</td>
-      <td style="color:var(--green);font-weight:700">6,379</td>
-      <td>97.7%</td>
-      <td style="font-weight:700">32 万</td>
-      <td><span class="risk risk-low">低</span></td>
-      <td style="font-weight:700;color:var(--accent)">B</td>
+    <tr style="background:#f5f5f5;opacity:0.55">
+      <td style="font-weight:700;color:#999">14</td>
+      <td style="font-weight:600;color:#888">退休返聘 <span style="font-size:10px;background:#e2e8f0;color:#718096;padding:1px 5px;border-radius:3px">不建议</span></td>
+      <td style="text-align:left;font-size:12px;color:#999">退休员工不缴社保</td>
+      <td style="color:#aaa;font-weight:700">6,379</td>
+      <td style="color:#aaa">97.7%</td>
+      <td style="font-weight:700;color:#aaa">32 万</td>
+      <td><span style="background:#e2e8f0;color:#718096;border:1px solid #cbd5e0;font-size:11px;padding:2px 6px;border-radius:4px">不建议</span></td>
+      <td style="font-weight:700;color:#aaa">—</td>
     </tr>
   </table>
 
@@ -1384,13 +1408,13 @@ td:first-child, th:first-child { text-align: left; }
       <div style="width:34px;height:34px;border-radius:50%;background:#ed8936;opacity:.8;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:12px;border:2px dashed #c05621">12</div>
       <div style="font-size:10px;margin-top:2px">非全日制</div>
     </div>
-    <div style="position:absolute;left:48%;top:88%;transform:translate(-50%,-50%);text-align:center">
-      <div style="width:30px;height:30px;border-radius:50%;background:#ed8936;opacity:.8;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:11px;border:2px dashed #c05621">13</div>
-      <div style="font-size:10px;margin-top:2px">实习生</div>
+    <div style="position:absolute;left:48%;top:88%;transform:translate(-50%,-50%);text-align:center;opacity:0.35">
+      <div style="width:30px;height:30px;border-radius:50%;background:#a0aec0;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:11px;border:2px dashed #718096">13</div>
+      <div style="font-size:10px;margin-top:2px;color:#999">实习生</div>
     </div>
-    <div style="position:absolute;left:10%;top:90%;transform:translate(-50%,-50%);text-align:center">
-      <div style="width:30px;height:30px;border-radius:50%;background:#4299e1;opacity:.8;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:11px;border:2px dashed #2b6cb0">14</div>
-      <div style="font-size:10px;margin-top:2px">退休返聘</div>
+    <div style="position:absolute;left:10%;top:90%;transform:translate(-50%,-50%);text-align:center;opacity:0.35">
+      <div style="width:30px;height:30px;border-radius:50%;background:#a0aec0;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:11px;border:2px dashed #718096">14</div>
+      <div style="font-size:10px;margin-top:2px;color:#999">退休返聘</div>
     </div>
 
     <div style="position:absolute;left:14%;top:58%;font-size:12px;color:var(--green);font-weight:700;background:#f0fff4;padding:2px 8px;border-radius:4px">安全区域</div>
@@ -1520,27 +1544,27 @@ td:first-child, th:first-child { text-align: left; }
       <td><span class="risk risk-med">中</span></td>
       <td>补缴全部社保 + 罚款</td>
     </tr>
-    <tr style="background:#fff8f0">
-      <td style="font-weight:700">13</td>
-      <td style="font-weight:600">实习生</td>
-      <td>4*</td>
-      <td style="color:var(--green);font-weight:700">14 万</td>
-      <td><span class="risk risk-med">中</span></td>
-      <td><span class="risk risk-med">中</span></td>
-      <td>认定为事实劳动关系需补缴</td>
+    <tr style="background:#f5f5f5;opacity:0.55">
+      <td style="font-weight:700;color:#999">13</td>
+      <td style="font-weight:600;color:#888">实习生 <span style="font-size:10px;background:#e2e8f0;color:#718096;padding:1px 5px;border-radius:3px">不建议</span></td>
+      <td style="color:#aaa">4*</td>
+      <td style="color:#aaa;font-weight:700">14 万</td>
+      <td><span style="background:#e2e8f0;color:#718096;border:1px solid #cbd5e0;font-size:11px;padding:2px 6px;border-radius:4px">不建议</span></td>
+      <td><span style="background:#e2e8f0;color:#718096;border:1px solid #cbd5e0;font-size:11px;padding:2px 6px;border-radius:4px">不建议</span></td>
+      <td style="color:#aaa">认定为事实劳动关系需补缴</td>
     </tr>
-    <tr style="background:#fff8f0">
-      <td style="font-weight:700">14</td>
-      <td style="font-weight:600">退休返聘</td>
+    <tr style="background:#f5f5f5;opacity:0.55">
+      <td style="font-weight:700;color:#999">14</td>
+      <td style="font-weight:600;color:#888">退休返聘 <span style="font-size:10px;background:#e2e8f0;color:#718096;padding:1px 5px;border-radius:3px">不建议</span></td>
       <td>11*</td>
-      <td style="color:var(--green);font-weight:700">32 万</td>
+      <td style="color:#aaa;font-weight:700">32 万</td>
       <td><span class="risk risk-low">低</span></td>
       <td><span class="risk risk-vlow">极低</span></td>
       <td>无处罚（合法用工形式）</td>
     </tr>
   </table>
   <div style="font-size:12px;color:var(--text-sec);margin-top:8px">
-    * 方案五（职工福利）受 14% 福利总额上限约束；方案六（社保洼地）按 15% 费率测算；方案七（薪资拆分）基于 70% 月发 + 30% 半年度拆分，人均月省 1,004 元；方案 12（非全日制）仅适用于 5% 岗位，人均月省 260 元为全员平均；方案 13（实习生）仅覆盖 10 个岗位；方案 14（退休返聘）仅覆盖 1% 岗位。
+    * 方案五（职工福利）受 14% 福利总额上限约束；方案六（社保洼地）按 15% 费率测算；方案七（薪资拆分）基于 70% 月发 + 30% 半年度拆分，人均月省 1,004 元；方案十二（退休返聘）和方案十三（实习生）不建议采用，仅作知识展示；方案十四（非全日制）仅适用于 5% 岗位，人均月省 260 元为全员平均。
   </div>
 </div>
 
@@ -1563,13 +1587,14 @@ td:first-child, th:first-child { text-align: left; }
       年省 721 万，风险极低。稳岗补贴、吸纳就业补贴、培训补贴等均有政策依据，合法合规。难点在于需主动申请且审批周期较长，建议指定专人跟进政策窗口。与方案七叠加使用效果最佳。
     </div>
     <div class="verdict verdict-ok" style="margin:0;border-left-color:#4299e1;background:#ebf8ff">
-      <strong>配套使用：方案十一（法定不计入项目）</strong>
-      年省 1,808 万，风险低。加班费、出差津贴等依法不计入缴费基数，只需在工资结构中明确列示。建议与方案七配合，进一步压低社保基数。企业年金（方案十）和残保金减免（方案九）也可作为补充手段。
+      <strong>配套使用：法定不计入项目 + 企业年金 + 残保金减免</strong>
+      法定不计入项目年省 1,808 万，风险低。加班费、出差津贴等依法不计入缴费基数，只需在工资结构中明确列示。建议与薪资拆分配合，进一步压低社保基数。企业年金和残保金减免也可作为补充手段。
     </div>
   </div>
-  <div class="verdict verdict-warn" style="margin-top:16px">
-    <strong>补充：方案六（社保洼地）+ 方案十二至十四（改变用工形式）</strong>
-    社保洼地（方案六）按 15% 费率测算可年省 4,443 万，是所有不改变用工方案中节省最多的，但需要在洼地城市设立实体公司，落地成本高。非全日制（方案十二）、实习生（方案十三）、退休返聘（方案十四）虽能节省 97%+ 的社保，但需要改变用工状态：非全日制每日不超 4 小时、实习生需学校合作、退休返聘适用面窄。这些方案适合特定岗位而非全员推广，可与主力方案组合使用。
+  <div class="verdict" style="margin-top:16px;background:#f7f7f7;border-left:3px solid #a0aec0">
+    <strong style="color:#718096">补充：方案六（社保洼地）+ 改变用工形式方案</strong>
+    <span style="color:#888">社保洼地（方案六）按 15% 费率测算可年省 4,443 万，是所有不改变用工方案中节省最多的，但需要在洼地城市设立实体公司，落地成本高。非全日制用工可与主力方案组合使用，适合特定岗位。</span><br>
+    <span style="color:#c53030;font-weight:600">方案十二（退休返聘）和方案十三（实习生）不建议采用</span><span style="color:#888">——两者虽能节省 97%+ 社保，但适用面极窄、落地风险高。退休返聘仅适合少数顾问类岗位，无法规模化；实习生以降本为目的大规模使用，极易被认定为"假实习真用工"，补缴+罚款远超节省。这两个方案仅作知识展示，不纳入实际执行计划。</span>
   </div>
   <div class="verdict verdict-danger" style="margin-top:16px">
     <strong>警告：方案一至四均不建议大规模使用</strong>
